@@ -1,0 +1,9 @@
+<h2> Toutes les locations </h2>
+
+<% @location.each do |location| %>
+
+    <div>Titre :<%= location.titre%> </div>
+    <div>Description :<%= location.description%> </div>
+    <div><%= link_to "Show", location_path(location) %> </div>
+    <hr>
+<% end %>

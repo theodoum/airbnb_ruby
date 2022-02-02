@@ -161,3 +161,349 @@ Completed 200 OK in 73ms (Views: 70.9ms | ActiveRecord: 0.0ms | Allocations: 504
   [1m[36mLocation Create (10.8ms)[0m  [1m[32mINSERT INTO "locations" ("titre", "nbChambre", "nbCouchage", "description", "ville", "rue", "numRue", "lat", "long", "prix", "photos", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["titre", "Villa a la montagne"], ["nbChambre", 4], ["nbCouchage", 6], ["description", "Une petite ville avec 4 chambre dispsant de 6 lits a lamontagne"], ["ville", "Val-d'Isère"], ["rue", "Rue des Leissières"], ["numRue", 250], ["lat", 45.4471], ["long", 6.9813], ["prix", 750.0], ["photos", "Aucune"], ["created_at", "2022-02-02 13:05:03.754469"], ["updated_at", "2022-02-02 13:05:03.754469"]]
   [1m[36mTRANSACTION (31.1ms)[0m  [1m[36mcommit transaction[0m
   [1m[36mLocation Load (0.3ms)[0m  [1m[34mSELECT "locations".* FROM "locations" /* loading for inspect */ LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[35m (8.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for 127.0.0.1 at 2022-02-02 15:18:57 +0100
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 10.3ms | Allocations: 402)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in C:/Users/thoma/OneDrive/Documents/Cours/MASTER 2/WEB FULL STACK/airbnb_ruby/public/packs
+[Webpacker] Hash: bee57a251308c78393c5
+Version: webpack 4.46.0
+Time: 1512ms
+Built at: 2022-02-02 15:19:01
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-de40139d376e62241b6d.js    125 KiB  application  [emitted] [immutable]  application
+js/application-de40139d376e62241b6d.js.map    139 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-de40139d376e62241b6d.js js/application-de40139d376e62241b6d.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 3 hidden modules
+
+  Rendered layout layouts/application.html.erb (Duration: 3600.2ms | Allocations: 20257)
+Completed 200 OK in 3697ms (Views: 3634.7ms | ActiveRecord: 0.0ms | Allocations: 24594)
+
+
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mLocation Load (0.1ms)[0m  [1m[34mSELECT "locations".* FROM "locations" /* loading for inspect */ LIMIT ?[0m  [["LIMIT", 11]]
+Started GET "/location" for 127.0.0.1 at 2022-02-02 15:22:46 +0100
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (No route matches [GET] "/location"):
+  
+Started GET "/location/1" for 127.0.0.1 at 2022-02-02 15:22:50 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/location/1"):
+  
+Started GET "/Location/1" for 127.0.0.1 at 2022-02-02 15:22:59 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/Location/1"):
+  
+Started GET "/home" for 127.0.0.1 at 2022-02-02 15:23:05 +0100
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 117)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 58.9ms | Allocations: 7513)
+Completed 200 OK in 70ms (Views: 63.4ms | ActiveRecord: 0.0ms | Allocations: 9722)
+
+
+Started GET "/location" for 127.0.0.1 at 2022-02-02 15:23:23 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/location"):
+  
+Started GET "/locations" for 127.0.0.1 at 2022-02-02 15:23:27 +0100
+Processing by LocationsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering locations/index.html.erb within layouts/application
+  Rendered locations/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 109)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 49.3ms | Allocations: 4619)
+Completed 200 OK in 56ms (Views: 52.6ms | ActiveRecord: 0.0ms | Allocations: 5639)
+
+
+Started GET "/locations/1" for 127.0.0.1 at 2022-02-02 15:23:33 +0100
+Processing by LocationsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mLocation Load (0.2ms)[0m  [1m[34mSELECT "locations".* FROM "locations" WHERE "locations"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/locations_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering locations/show.html.erb within layouts/application
+  Rendered locations/show.html.erb within layouts/application (Duration: 0.3ms | Allocations: 114)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 51.6ms | Allocations: 4661)
+Completed 200 OK in 72ms (Views: 52.7ms | ActiveRecord: 6.9ms | Allocations: 15263)
+
+
+Started GET "/locations/2" for 127.0.0.1 at 2022-02-02 15:23:44 +0100
+Processing by LocationsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mLocation Load (0.2ms)[0m  [1m[34mSELECT "locations".* FROM "locations" WHERE "locations"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/locations_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering locations/show.html.erb within layouts/application
+  Rendered locations/show.html.erb within layouts/application (Duration: 0.1ms | Allocations: 41)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 38.8ms | Allocations: 4587)
+Completed 200 OK in 42ms (Views: 39.7ms | ActiveRecord: 0.2ms | Allocations: 5702)
+
+
+Started GET "/locations/3" for 127.0.0.1 at 2022-02-02 15:23:48 +0100
+Processing by LocationsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mLocation Load (0.1ms)[0m  [1m[34mSELECT "locations".* FROM "locations" WHERE "locations"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/locations_controller.rb:7:in `show'
+Completed 404 Not Found in 2ms (ActiveRecord: 0.1ms | Allocations: 1175)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Location with 'id'=3):
+  
+app/controllers/locations_controller.rb:7:in `show'
+Started GET "/locations" for 127.0.0.1 at 2022-02-02 15:23:54 +0100
+Processing by LocationsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering locations/index.html.erb within layouts/application
+  Rendered locations/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 41)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 36.6ms | Allocations: 4587)
+Completed 200 OK in 38ms (Views: 37.5ms | ActiveRecord: 0.0ms | Allocations: 5079)
+
+
+Started GET "/locations" for 127.0.0.1 at 2022-02-02 15:35:42 +0100
+Processing by LocationsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering locations/index.html.erb within layouts/application
+  Rendered locations/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 107)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 50.5ms | Allocations: 4851)
+Completed 200 OK in 57ms (Views: 55.0ms | Allocations: 6095)
+
+
+Started GET "/locations/1" for 127.0.0.1 at 2022-02-02 15:35:48 +0100
+Processing by LocationsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/locations_controller.rb:7:in `show'
+  [1m[36mLocation Load (0.1ms)[0m  [1m[34mSELECT "locations".* FROM "locations" WHERE "locations"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/locations_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering locations/show.html.erb within layouts/application
+  Rendered locations/show.html.erb within layouts/application (Duration: 10.5ms | Allocations: 3282)
+  Rendered layout layouts/application.html.erb (Duration: 11.3ms | Allocations: 3367)
+Completed 500 Internal Server Error in 18ms (ActiveRecord: 0.4ms | Allocations: 5250)
+
+
+  
+ActionView::Template::Error (undefined method `auteur' for #<Location:0x000001f70e6b0bf0>):
+    4: <div> La nom de la location est de la suivant : <h2> <%= @location.titre %> <h2></div>
+    5: <div> <%= @location.description %> </div>
+    6: 
+    7: <div> publié par : <%= @location.auteur %> </div>
+  
+app/views/locations/show.html.erb:7
+Started GET "/locations/1" for 127.0.0.1 at 2022-02-02 15:36:06 +0100
+Processing by LocationsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mLocation Load (0.2ms)[0m  [1m[34mSELECT "locations".* FROM "locations" WHERE "locations"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/locations_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering locations/show.html.erb within layouts/application
+  Rendered locations/show.html.erb within layouts/application (Duration: 6.8ms | Allocations: 154)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 50.8ms | Allocations: 4900)
+Completed 200 OK in 58ms (Views: 54.9ms | ActiveRecord: 0.2ms | Allocations: 6753)
+
+
+Started GET "/locations/1" for 127.0.0.1 at 2022-02-02 15:38:13 +0100
+Processing by LocationsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mLocation Load (0.2ms)[0m  [1m[34mSELECT "locations".* FROM "locations" WHERE "locations"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/locations_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering locations/show.html.erb within layouts/application
+  Rendered locations/show.html.erb within layouts/application (Duration: 6.4ms | Allocations: 150)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 46.4ms | Allocations: 4895)
+Completed 200 OK in 55ms (Views: 50.6ms | ActiveRecord: 0.2ms | Allocations: 6744)
+
+
+Started GET "/locations/1" for 127.0.0.1 at 2022-02-02 15:38:28 +0100
+Processing by LocationsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mLocation Load (0.2ms)[0m  [1m[34mSELECT "locations".* FROM "locations" WHERE "locations"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/locations_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering locations/show.html.erb within layouts/application
+  Rendered locations/show.html.erb within layouts/application (Duration: 5.7ms | Allocations: 155)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 45.6ms | Allocations: 4901)
+Completed 200 OK in 58ms (Views: 49.9ms | ActiveRecord: 0.2ms | Allocations: 6755)
+
+
+Started GET "/locations/2" for 127.0.0.1 at 2022-02-02 15:38:49 +0100
+Processing by LocationsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mLocation Load (0.4ms)[0m  [1m[34mSELECT "locations".* FROM "locations" WHERE "locations"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/locations_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering locations/show.html.erb within layouts/application
+  Rendered locations/show.html.erb within layouts/application (Duration: 0.1ms | Allocations: 46)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 47.8ms | Allocations: 4594)
+Completed 200 OK in 52ms (Views: 48.7ms | ActiveRecord: 0.4ms | Allocations: 5712)
+
+
+Started GET "/locations/2" for 127.0.0.1 at 2022-02-02 15:45:43 +0100
+Processing by LocationsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/locations_controller.rb:7:in `show'
+  [1m[36mLocation Load (0.2ms)[0m  [1m[34mSELECT "locations".* FROM "locations" WHERE "locations"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/locations_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering locations/show.html.erb within layouts/application
+  Rendered locations/show.html.erb within layouts/application (Duration: 0.4ms | Allocations: 150)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 48.1ms | Allocations: 4857)
+Completed 200 OK in 67ms (Views: 53.7ms | ActiveRecord: 0.6ms | Allocations: 14534)
+
+
+Started GET "/locations" for 127.0.0.1 at 2022-02-02 15:45:45 +0100
+Processing by LocationsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering locations/index.html.erb within layouts/application
+  Rendered locations/index.html.erb within layouts/application (Duration: 7.1ms | Allocations: 1130)
+  Rendered layout layouts/application.html.erb (Duration: 8.0ms | Allocations: 1216)
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.0ms | Allocations: 1835)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <% @location.each do |location| %>
+
+    <div>Titre :<%= location.titre%> </div>
+    <div>Description :<%= location.description%> </div>
+    <hr>
+<% send %>
+):
+1:    <% @location.each do |location| %>
+2:    
+3:        <div>Titre :<%= location.titre%> </div>
+4:        <div>Description :<%= location.description%> </div>
+5:        <hr>
+6:    <% send %>
+  
+app/views/locations/index.html.erb:8: syntax error, unexpected end-of-input, expecting end
+app/views/locations/index.html.erb:8: syntax error, unexpected end-of-input, expecting end
+app/views/locations/index.html.erb:8: syntax error, unexpected end-of-input, expecting end
+app/views/locations/index.html.erb:8: syntax error, unexpected end-of-input, expecting end
+app/views/locations/index.html.erb:8: syntax error, unexpected end-of-input, expecting end
+app/views/locations/index.html.erb:8: syntax error, unexpected end-of-input, expecting end
+Started GET "/locations" for 127.0.0.1 at 2022-02-02 15:46:00 +0100
+Processing by LocationsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering locations/index.html.erb within layouts/application
+  [1m[36mLocation Load (0.2ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/views/locations/index.html.erb:1
+  Rendered locations/index.html.erb within layouts/application (Duration: 8.1ms | Allocations: 918)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 47.6ms | Allocations: 5665)
+Completed 200 OK in 55ms (Views: 52.7ms | ActiveRecord: 0.2ms | Allocations: 6922)
+
+
+Started GET "/locations" for 127.0.0.1 at 2022-02-02 15:47:12 +0100
+Processing by LocationsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering locations/index.html.erb within layouts/application
+  [1m[36mLocation Load (0.1ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/views/locations/index.html.erb:3
+  Rendered locations/index.html.erb within layouts/application (Duration: 11.9ms | Allocations: 4266)
+  Rendered layout layouts/application.html.erb (Duration: 12.4ms | Allocations: 4351)
+Completed 500 Internal Server Error in 18ms (ActiveRecord: 0.1ms | Allocations: 5581)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `location' for #<ActionView::Base:0x0001f70d082c70>
+Did you mean?  locatio2n
+               @location):
+    2: 
+    3: <% @location.each do |locatio2n| %>
+    4: 
+    5:     <div>Titre :<%= location.titre%> </div>
+    6:     <div>Description :<%= location.description%> </div>
+    7:     <hr>
+    8: <% end %>
+  
+app/views/locations/index.html.erb:5
+app/views/locations/index.html.erb:3
+Started GET "/locations" for 127.0.0.1 at 2022-02-02 15:48:38 +0100
+Processing by LocationsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering locations/index.html.erb within layouts/application
+  [1m[36mLocation Load (0.3ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/views/locations/index.html.erb:3
+  Rendered locations/index.html.erb within layouts/application (Duration: 10.1ms | Allocations: 888)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 47.9ms | Allocations: 5634)
+Completed 200 OK in 55ms (Views: 52.6ms | ActiveRecord: 0.3ms | Allocations: 6891)
+
+
+Started GET "/locations" for 127.0.0.1 at 2022-02-02 15:51:51 +0100
+Processing by LocationsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering locations/index.html.erb within layouts/application
+  [1m[36mLocation Load (0.2ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/views/locations/index.html.erb:3
+  Rendered locations/index.html.erb within layouts/application (Duration: 21.8ms | Allocations: 4139)
+  Rendered layout layouts/application.html.erb (Duration: 22.8ms | Allocations: 4224)
+Completed 500 Internal Server Error in 29ms (ActiveRecord: 0.2ms | Allocations: 5448)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `blague' for #<ActionView::Base:0x0001f70fad4de8>):
+    4: 
+    5:     <div>Titre :<%= location.titre%> </div>
+    6:     <div>Description :<%= location.description%> </div>
+    7:     <div><%= link_to "Show", location_path(blague) %> </div>
+    8:     <hr>
+    9: <% end %>
+  
+app/views/locations/index.html.erb:7
+app/views/locations/index.html.erb:3
+Started GET "/locations" for 127.0.0.1 at 2022-02-02 15:52:10 +0100
+Processing by LocationsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering locations/index.html.erb within layouts/application
+  [1m[36mLocation Load (0.2ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/views/locations/index.html.erb:3
+  Rendered locations/index.html.erb within layouts/application (Duration: 9.9ms | Allocations: 971)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 49.3ms | Allocations: 5716)
+Completed 200 OK in 55ms (Views: 53.6ms | ActiveRecord: 0.2ms | Allocations: 6973)
+
+
+Started GET "/locations/1" for 127.0.0.1 at 2022-02-02 15:52:13 +0100
+Processing by LocationsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mLocation Load (0.2ms)[0m  [1m[34mSELECT "locations".* FROM "locations" WHERE "locations"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/locations_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering locations/show.html.erb within layouts/application
+  Rendered locations/show.html.erb within layouts/application (Duration: 0.5ms | Allocations: 149)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 36.6ms | Allocations: 4696)
+Completed 200 OK in 41ms (Views: 37.6ms | ActiveRecord: 0.2ms | Allocations: 5942)
+
+
