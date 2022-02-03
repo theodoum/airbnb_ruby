@@ -29420,3 +29420,682 @@ Completed 200 OK in 56ms (Views: 55.9ms | ActiveRecord: 0.2ms | Allocations: 583
 
 
 >>>>>>> 130e1f3bc4601c5a0df67f22261e8d5a4c6801be
+Started GET "/sign_in" for 127.0.0.1 at 2022-02-03 21:33:13 +0100
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 0.7ms | Allocations: 349)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 55.7ms | Allocations: 9922)
+Completed 200 OK in 88ms (Views: 60.1ms | ActiveRecord: 0.6ms | Allocations: 16649)
+
+
+Started GET "/locations" for 127.0.0.1 at 2022-02-03 21:33:17 +0100
+Processing by LocationsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering locations/index.html.erb within layouts/application
+  [1m[36mLocation Load (0.2ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/views/locations/index.html.erb:7
+  Rendered locations/index.html.erb within layouts/application (Duration: 9.2ms | Allocations: 9964)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 51.3ms | Allocations: 14517)
+Completed 200 OK in 56ms (Views: 53.0ms | ActiveRecord: 0.7ms | Allocations: 16280)
+
+
+Started GET "/" for 127.0.0.1 at 2022-02-03 21:33:31 +0100
+Processing by LocationsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering locations/index.html.erb within layouts/application
+  [1m[36mLocation Load (0.1ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/views/locations/index.html.erb:7
+  Rendered locations/index.html.erb within layouts/application (Duration: 2.9ms | Allocations: 1779)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 36.9ms | Allocations: 6367)
+Completed 200 OK in 38ms (Views: 37.1ms | ActiveRecord: 0.1ms | Allocations: 6872)
+
+
+Started GET "/" for 127.0.0.1 at 2022-02-03 21:37:01 +0100
+Processing by LocationsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering locations/index.html.erb within layouts/application
+  [1m[36mLocation Load (0.1ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/views/locations/index.html.erb:7
+  Rendered locations/index.html.erb within layouts/application (Duration: 3.0ms | Allocations: 1783)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 78.2ms | Allocations: 13902)
+Completed 200 OK in 79ms (Views: 78.4ms | ActiveRecord: 0.1ms | Allocations: 14406)
+
+
+Started GET "/" for 127.0.0.1 at 2022-02-03 21:37:09 +0100
+Processing by LocationsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering locations/index.html.erb within layouts/application
+  [1m[36mLocation Load (0.1ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/views/locations/index.html.erb:7
+  Rendered locations/index.html.erb within layouts/application (Duration: 2.9ms | Allocations: 1792)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 68.5ms | Allocations: 13457)
+Completed 200 OK in 69ms (Views: 68.7ms | ActiveRecord: 0.1ms | Allocations: 13970)
+
+
+Started GET "/" for 127.0.0.1 at 2022-02-03 21:37:10 +0100
+Processing by LocationsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering locations/index.html.erb within layouts/application
+  [1m[36mLocation Load (0.1ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/views/locations/index.html.erb:7
+  Rendered locations/index.html.erb within layouts/application (Duration: 2.9ms | Allocations: 1783)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 38.0ms | Allocations: 6372)
+Completed 200 OK in 39ms (Views: 38.2ms | ActiveRecord: 0.1ms | Allocations: 6876)
+
+
+Started GET "/" for 127.0.0.1 at 2022-02-03 21:37:18 +0100
+Processing by LocationsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering locations/index.html.erb within layouts/application
+  [1m[36mLocation Load (0.2ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/views/locations/index.html.erb:7
+  Rendered locations/index.html.erb within layouts/application (Duration: 3.3ms | Allocations: 1783)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 74.1ms | Allocations: 14369)
+Completed 200 OK in 75ms (Views: 74.4ms | ActiveRecord: 0.2ms | Allocations: 14873)
+
+
+Started GET "/" for 127.0.0.1 at 2022-02-03 21:38:03 +0100
+Processing by LocationsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering locations/index.html.erb within layouts/application
+  [1m[36mLocation Load (0.1ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/views/locations/index.html.erb:7
+  Rendered locations/index.html.erb within layouts/application (Duration: 2.9ms | Allocations: 1783)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 70.2ms | Allocations: 13409)
+Completed 200 OK in 71ms (Views: 70.4ms | ActiveRecord: 0.1ms | Allocations: 13913)
+
+
+Started GET "/" for 127.0.0.1 at 2022-02-03 21:38:04 +0100
+Processing by LocationsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering locations/index.html.erb within layouts/application
+  [1m[36mLocation Load (0.2ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/views/locations/index.html.erb:7
+  Rendered locations/index.html.erb within layouts/application (Duration: 2.8ms | Allocations: 1783)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 35.9ms | Allocations: 6371)
+Completed 200 OK in 37ms (Views: 36.1ms | ActiveRecord: 0.2ms | Allocations: 6875)
+
+
+Started GET "/" for 127.0.0.1 at 2022-02-03 21:38:53 +0100
+Processing by LocationsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering locations/index.html.erb within layouts/application
+  [1m[36mLocation Load (0.1ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/views/locations/index.html.erb:7
+  Rendered locations/index.html.erb within layouts/application (Duration: 3.1ms | Allocations: 1792)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 68.5ms | Allocations: 13898)
+Completed 200 OK in 69ms (Views: 68.7ms | ActiveRecord: 0.1ms | Allocations: 14411)
+
+
+Started GET "/" for 127.0.0.1 at 2022-02-03 21:39:51 +0100
+Processing by LocationsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering locations/index.html.erb within layouts/application
+  [1m[36mLocation Load (0.1ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/views/locations/index.html.erb:7
+  Rendered locations/index.html.erb within layouts/application (Duration: 3.2ms | Allocations: 1783)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 69.6ms | Allocations: 15909)
+Completed 200 OK in 70ms (Views: 69.8ms | ActiveRecord: 0.1ms | Allocations: 16413)
+
+
+Started GET "/app/assets/images/background.jpg" for 127.0.0.1 at 2022-02-03 21:39:51 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/app/assets/images/background.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/app/assets/images/background.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/app/assets/imagesbackground.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/app/assets/imagebackground.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/app/assets/imagbackground.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/app/assets/imabackground.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/app/assets/imbackground.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/app/assets/ibackground.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/app/assets/background.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/app/assetsbackground.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/app/assebackground.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/app/assbackground.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/app/asbackground.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/app/abackground.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/app/background.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/appbackground.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/apbackground.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/abackground.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/.background.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/app/assetbackground.jpg"):
+  
+Started GET "/" for 127.0.0.1 at 2022-02-03 21:40:34 +0100
+Processing by LocationsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering locations/index.html.erb within layouts/application
+  [1m[36mLocation Load (0.2ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/views/locations/index.html.erb:7
+  Rendered locations/index.html.erb within layouts/application (Duration: 3.2ms | Allocations: 1800)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 67.4ms | Allocations: 16278)
+Completed 200 OK in 68ms (Views: 67.6ms | ActiveRecord: 0.2ms | Allocations: 16801)
+
+
+Started GET "/" for 127.0.0.1 at 2022-02-03 21:41:07 +0100
+Processing by LocationsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering locations/index.html.erb within layouts/application
+  [1m[36mLocation Load (0.1ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/views/locations/index.html.erb:7
+  Rendered locations/index.html.erb within layouts/application (Duration: 3.2ms | Allocations: 1784)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 68.6ms | Allocations: 16123)
+Completed 200 OK in 69ms (Views: 68.8ms | ActiveRecord: 0.1ms | Allocations: 16628)
+
+
+Started GET "/locations/new" for 127.0.0.1 at 2022-02-03 21:42:12 +0100
+Processing by LocationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering locations/new.html.erb within layouts/application
+  Rendered locations/new.html.erb within layouts/application (Duration: 38.3ms | Allocations: 7897)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 84.6ms | Allocations: 13279)
+Completed 200 OK in 87ms (Views: 85.0ms | ActiveRecord: 0.0ms | Allocations: 13949)
+
+
+Started GET "/" for 127.0.0.1 at 2022-02-03 21:43:26 +0100
+Processing by LocationsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering locations/index.html.erb within layouts/application
+  [1m[36mLocation Load (0.2ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/views/locations/index.html.erb:8
+  Rendered locations/index.html.erb within layouts/application (Duration: 14.0ms | Allocations: 2049)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 51.5ms | Allocations: 7687)
+Completed 200 OK in 57ms (Views: 54.9ms | ActiveRecord: 0.2ms | Allocations: 8957)
+
+
+Started GET "/" for 127.0.0.1 at 2022-02-03 21:44:38 +0100
+Processing by LocationsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering locations/index.html.erb within layouts/application
+  [1m[36mLocation Load (0.2ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/views/locations/index.html.erb:8
+  Rendered locations/index.html.erb within layouts/application (Duration: 16.5ms | Allocations: 2051)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 93.2ms | Allocations: 15706)
+Completed 200 OK in 100ms (Views: 98.0ms | ActiveRecord: 0.2ms | Allocations: 16963)
+
+
+Started GET "/" for 127.0.0.1 at 2022-02-03 21:45:01 +0100
+Processing by LocationsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering locations/index.html.erb within layouts/application
+  [1m[36mLocation Load (0.1ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/views/locations/index.html.erb:8
+  Rendered locations/index.html.erb within layouts/application (Duration: 3.9ms | Allocations: 2050)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 42.9ms | Allocations: 7649)
+Completed 200 OK in 48ms (Views: 46.3ms | ActiveRecord: 0.1ms | Allocations: 8911)
+
+
+Started GET "/" for 127.0.0.1 at 2022-02-03 21:45:32 +0100
+Processing by LocationsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering locations/index.html.erb within layouts/application
+  [1m[36mLocation Load (0.2ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/views/locations/index.html.erb:8
+  Rendered locations/index.html.erb within layouts/application (Duration: 3.5ms | Allocations: 1790)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 68.9ms | Allocations: 17057)
+Completed 200 OK in 70ms (Views: 69.1ms | ActiveRecord: 0.2ms | Allocations: 17564)
+
+
+Started GET "/" for 127.0.0.1 at 2022-02-03 21:45:47 +0100
+Processing by LocationsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering locations/index.html.erb within layouts/application
+  [1m[36mLocation Load (0.1ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/views/locations/index.html.erb:8
+  Rendered locations/index.html.erb within layouts/application (Duration: 3.0ms | Allocations: 1783)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 70.4ms | Allocations: 16543)
+Completed 200 OK in 71ms (Views: 70.6ms | ActiveRecord: 0.1ms | Allocations: 17049)
+
+
+Started GET "/" for 127.0.0.1 at 2022-02-03 21:46:12 +0100
+Processing by LocationsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering locations/index.html.erb within layouts/application
+  [1m[36mLocation Load (0.1ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/views/locations/index.html.erb:8
+  Rendered locations/index.html.erb within layouts/application (Duration: 2.9ms | Allocations: 1783)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 68.9ms | Allocations: 15243)
+Completed 200 OK in 70ms (Views: 69.0ms | ActiveRecord: 0.1ms | Allocations: 15749)
+
+
+Started GET "/" for 127.0.0.1 at 2022-02-03 21:46:27 +0100
+Processing by LocationsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering locations/index.html.erb within layouts/application
+  [1m[36mLocation Load (0.1ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/views/locations/index.html.erb:8
+  Rendered locations/index.html.erb within layouts/application (Duration: 2.8ms | Allocations: 1783)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 69.7ms | Allocations: 16165)
+Completed 200 OK in 70ms (Views: 69.9ms | ActiveRecord: 0.1ms | Allocations: 16671)
+
+
+Started GET "/" for 127.0.0.1 at 2022-02-03 21:46:36 +0100
+Processing by LocationsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering locations/index.html.erb within layouts/application
+  [1m[36mLocation Load (0.1ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/views/locations/index.html.erb:8
+  Rendered locations/index.html.erb within layouts/application (Duration: 2.8ms | Allocations: 1783)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 70.0ms | Allocations: 15681)
+Completed 200 OK in 71ms (Views: 70.1ms | ActiveRecord: 0.1ms | Allocations: 16187)
+
+
+Started GET "/" for 127.0.0.1 at 2022-02-03 21:46:43 +0100
+Processing by LocationsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering locations/index.html.erb within layouts/application
+  [1m[36mLocation Load (0.1ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/views/locations/index.html.erb:8
+  Rendered locations/index.html.erb within layouts/application (Duration: 6.2ms | Allocations: 1783)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 71.0ms | Allocations: 15711)
+Completed 200 OK in 72ms (Views: 71.2ms | ActiveRecord: 0.1ms | Allocations: 16217)
+
+
+Started GET "/" for 127.0.0.1 at 2022-02-03 21:46:54 +0100
+Processing by LocationsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering locations/index.html.erb within layouts/application
+  [1m[36mLocation Load (0.2ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/views/locations/index.html.erb:8
+  Rendered locations/index.html.erb within layouts/application (Duration: 5.7ms | Allocations: 1783)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 86.8ms | Allocations: 16578)
+Completed 200 OK in 88ms (Views: 87.0ms | ActiveRecord: 0.2ms | Allocations: 17084)
+
+
+Started GET "/" for 127.0.0.1 at 2022-02-03 21:47:07 +0100
+Processing by LocationsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering locations/index.html.erb within layouts/application
+  [1m[36mLocation Load (0.1ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/views/locations/index.html.erb:8
+  Rendered locations/index.html.erb within layouts/application (Duration: 3.0ms | Allocations: 1784)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 61.4ms | Allocations: 16600)
+Completed 200 OK in 62ms (Views: 61.6ms | ActiveRecord: 0.1ms | Allocations: 17107)
+
+
+Started GET "/locations/1" for 127.0.0.1 at 2022-02-03 21:47:39 +0100
+Processing by LocationsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mLocation Load (0.3ms)[0m  [1m[34mSELECT "locations".* FROM "locations" WHERE "locations"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/locations_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering locations/show.html.erb within layouts/application
+  Rendered locations/show.html.erb within layouts/application (Duration: 0.5ms | Allocations: 296)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 34.6ms | Allocations: 5716)
+Completed 200 OK in 67ms (Views: 34.9ms | ActiveRecord: 0.3ms | Allocations: 9733)
+
+
+Started DELETE "/locations/1" for 127.0.0.1 at 2022-02-03 21:47:42 +0100
+Processing by LocationsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "id"=>"1"}
+  [1m[36mLocation Load (0.1ms)[0m  [1m[34mSELECT "locations".* FROM "locations" WHERE "locations"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/locations_controller.rb:38:in `destroy'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/locations_controller.rb:39:in `destroy'
+  [1m[36mLocation Destroy (1.1ms)[0m  [1m[31mDELETE FROM "locations" WHERE "locations"."id" = ?[0m  [["id", 1]]
+  ↳ app/controllers/locations_controller.rb:39:in `destroy'
+  [1m[36mTRANSACTION (5.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/locations_controller.rb:39:in `destroy'
+Redirected to http://127.0.0.1:3000/locations
+Completed 302 Found in 11ms (ActiveRecord: 7.0ms | Allocations: 2788)
+
+
+Started GET "/locations" for 127.0.0.1 at 2022-02-03 21:47:42 +0100
+Processing by LocationsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering locations/index.html.erb within layouts/application
+  [1m[36mLocation Load (0.1ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/views/locations/index.html.erb:8
+  Rendered locations/index.html.erb within layouts/application (Duration: 2.8ms | Allocations: 1697)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 65.8ms | Allocations: 7098)
+Completed 200 OK in 67ms (Views: 66.3ms | ActiveRecord: 0.1ms | Allocations: 7604)
+
+
+Started GET "/locations/2/edit" for 127.0.0.1 at 2022-02-03 21:47:45 +0100
+Processing by LocationsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mLocation Load (0.1ms)[0m  [1m[34mSELECT "locations".* FROM "locations" WHERE "locations"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/locations_controller.rb:14:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering locations/edit.html.erb within layouts/application
+  Rendered locations/edit.html.erb within layouts/application (Duration: 14.5ms | Allocations: 3085)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 52.6ms | Allocations: 8563)
+Completed 200 OK in 55ms (Views: 53.0ms | ActiveRecord: 0.1ms | Allocations: 9809)
+
+
+Started GET "/" for 127.0.0.1 at 2022-02-03 21:47:48 +0100
+Processing by LocationsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering locations/index.html.erb within layouts/application
+  [1m[36mLocation Load (0.1ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/views/locations/index.html.erb:8
+  Rendered locations/index.html.erb within layouts/application (Duration: 2.7ms | Allocations: 1692)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 39.6ms | Allocations: 7088)
+Completed 200 OK in 40ms (Views: 39.9ms | ActiveRecord: 0.1ms | Allocations: 7595)
+
+
+Started GET "/" for 127.0.0.1 at 2022-02-03 21:48:48 +0100
+Processing by LocationsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering locations/index.html.erb within layouts/application
+  [1m[36mLocation Load (0.1ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/views/locations/index.html.erb:8
+  Rendered locations/index.html.erb within layouts/application (Duration: 2.9ms | Allocations: 1689)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 67.3ms | Allocations: 17477)
+Completed 200 OK in 68ms (Views: 67.5ms | ActiveRecord: 0.1ms | Allocations: 17983)
+
+
+Started GET "/" for 127.0.0.1 at 2022-02-03 21:48:49 +0100
+Processing by LocationsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering locations/index.html.erb within layouts/application
+  [1m[36mLocation Load (0.1ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/views/locations/index.html.erb:8
+  Rendered locations/index.html.erb within layouts/application (Duration: 3.1ms | Allocations: 1689)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 40.1ms | Allocations: 7085)
+Completed 200 OK in 41ms (Views: 40.3ms | ActiveRecord: 0.1ms | Allocations: 7591)
+
+
+Started GET "/" for 127.0.0.1 at 2022-02-03 21:48:49 +0100
+Processing by LocationsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering locations/index.html.erb within layouts/application
+  [1m[36mLocation Load (0.2ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/views/locations/index.html.erb:8
+  Rendered locations/index.html.erb within layouts/application (Duration: 2.9ms | Allocations: 1689)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 36.3ms | Allocations: 7085)
+Completed 200 OK in 37ms (Views: 36.4ms | ActiveRecord: 0.2ms | Allocations: 7591)
+
+
+Started GET "/new" for 127.0.0.1 at 2022-02-03 21:48:54 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/new"):
+  
+Started GET "/" for 127.0.0.1 at 2022-02-03 21:48:57 +0100
+Processing by LocationsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering locations/index.html.erb within layouts/application
+  [1m[36mLocation Load (0.1ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/views/locations/index.html.erb:8
+  Rendered locations/index.html.erb within layouts/application (Duration: 2.9ms | Allocations: 1689)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 39.9ms | Allocations: 7089)
+Completed 200 OK in 41ms (Views: 40.1ms | ActiveRecord: 0.1ms | Allocations: 7594)
+
+
+Started GET "/locations/new" for 127.0.0.1 at 2022-02-03 21:49:05 +0100
+Processing by LocationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering locations/new.html.erb within layouts/application
+  Rendered locations/new.html.erb within layouts/application (Duration: 2.6ms | Allocations: 3001)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 50.2ms | Allocations: 8479)
+Completed 200 OK in 52ms (Views: 50.6ms | ActiveRecord: 0.0ms | Allocations: 9140)
+
+
+Started POST "/locations" for 127.0.0.1 at 2022-02-03 21:49:14 +0100
+Processing by LocationsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "location"=>{"titre"=>"eazer", "description"=>"azerazer", "nbChambre"=>"zaeraz", "nbCouchage"=>"zaerazer", "ville"=>"eazeraze", "rue"=>"razeraz", "numRue"=>"erazera", "lat"=>"zaeraz", "long"=>"erazera", "prix"=>"zerazeraz", "photos"=>"eraze"}, "commit"=>"Publier l'annonce"}
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/locations_controller.rb:20:in `create'
+  [1m[36mLocation Create (0.6ms)[0m  [1m[32mINSERT INTO "locations" ("titre", "nbChambre", "nbCouchage", "description", "ville", "rue", "numRue", "lat", "long", "prix", "photos", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["titre", "eazer"], ["nbChambre", 0], ["nbCouchage", 0], ["description", "azerazer"], ["ville", "eazeraze"], ["rue", "razeraz"], ["numRue", 0], ["lat", 0.0], ["long", 0.0], ["prix", 0.0], ["photos", "eraze"], ["created_at", "2022-02-03 20:49:14.531230"], ["updated_at", "2022-02-03 20:49:14.531230"]]
+  ↳ app/controllers/locations_controller.rb:20:in `create'
+  [1m[36mTRANSACTION (4.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/locations_controller.rb:20:in `create'
+Redirected to http://127.0.0.1:3000/locations
+Completed 302 Found in 9ms (ActiveRecord: 5.3ms | Allocations: 3084)
+
+
+Started GET "/locations" for 127.0.0.1 at 2022-02-03 21:49:14 +0100
+Processing by LocationsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering locations/index.html.erb within layouts/application
+  [1m[36mLocation Load (0.2ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/views/locations/index.html.erb:8
+  Rendered locations/index.html.erb within layouts/application (Duration: 3.0ms | Allocations: 1785)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 40.2ms | Allocations: 7181)
+Completed 200 OK in 41ms (Views: 40.4ms | ActiveRecord: 0.2ms | Allocations: 7686)
+
+
+Started GET "/locations" for 127.0.0.1 at 2022-02-03 21:50:27 +0100
+Processing by LocationsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering locations/index.html.erb within layouts/application
+  [1m[36mLocation Load (0.1ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/views/locations/index.html.erb:8
+  Rendered locations/index.html.erb within layouts/application (Duration: 2.8ms | Allocations: 1781)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 70.0ms | Allocations: 16679)
+Completed 200 OK in 71ms (Views: 70.1ms | ActiveRecord: 0.1ms | Allocations: 17183)
+
+
+Started GET "/locations" for 127.0.0.1 at 2022-02-03 21:50:29 +0100
+Processing by LocationsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering locations/index.html.erb within layouts/application
+  [1m[36mLocation Load (0.1ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/views/locations/index.html.erb:8
+  Rendered locations/index.html.erb within layouts/application (Duration: 2.8ms | Allocations: 1781)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 38.6ms | Allocations: 7177)
+Completed 200 OK in 39ms (Views: 38.8ms | ActiveRecord: 0.1ms | Allocations: 7681)
+
+
+Started GET "/locations" for 127.0.0.1 at 2022-02-03 21:50:45 +0100
+Processing by LocationsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering locations/index.html.erb within layouts/application
+  [1m[36mLocation Load (0.1ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/views/locations/index.html.erb:8
+  Rendered locations/index.html.erb within layouts/application (Duration: 3.0ms | Allocations: 1781)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 71.2ms | Allocations: 15743)
+Completed 200 OK in 72ms (Views: 71.4ms | ActiveRecord: 0.1ms | Allocations: 16247)
+
+
+Started GET "/locations" for 127.0.0.1 at 2022-02-03 21:50:53 +0100
+Processing by LocationsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering locations/index.html.erb within layouts/application
+  [1m[36mLocation Load (0.1ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/views/locations/index.html.erb:8
+  Rendered locations/index.html.erb within layouts/application (Duration: 2.8ms | Allocations: 1781)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 75.1ms | Allocations: 16193)
+Completed 200 OK in 76ms (Views: 75.4ms | ActiveRecord: 0.1ms | Allocations: 16697)
+
+
+Started GET "/locations" for 127.0.0.1 at 2022-02-03 21:51:02 +0100
+Processing by LocationsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering locations/index.html.erb within layouts/application
+  [1m[36mLocation Load (0.2ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/views/locations/index.html.erb:8
+  Rendered locations/index.html.erb within layouts/application (Duration: 3.0ms | Allocations: 1781)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 52.4ms | Allocations: 7220)
+Completed 200 OK in 53ms (Views: 52.6ms | ActiveRecord: 0.2ms | Allocations: 7724)
+
+
+Started GET "/locations" for 127.0.0.1 at 2022-02-03 21:51:52 +0100
+Processing by LocationsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering locations/index.html.erb within layouts/application
+  [1m[36mLocation Load (0.1ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/views/locations/index.html.erb:8
+  Rendered locations/index.html.erb within layouts/application (Duration: 2.9ms | Allocations: 1781)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 68.4ms | Allocations: 17571)
+Completed 200 OK in 69ms (Views: 68.6ms | ActiveRecord: 0.1ms | Allocations: 18075)
+
+
+Started GET "/locations" for 127.0.0.1 at 2022-02-03 21:52:58 +0100
+Processing by LocationsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering locations/index.html.erb within layouts/application
+  Rendered locations/index.html.erb within layouts/application (Duration: 18.0ms | Allocations: 4608)
+  Rendered layout layouts/application.html.erb (Duration: 18.2ms | Allocations: 4693)
+Completed 500 Internal Server Error in 23ms (ActiveRecord: 0.0ms | Allocations: 5928)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `location' for #<ActionView::Base:0x0001813792cf48>
+Did you mean?  @location):
+    1: <div class="logo">
+    2: <%= image_tag "logo.png", height: 75 %>
+    3: <div><%= link_to "Voir l'annonce", sign_in_path(location) %> </div>
+    4: </div>
+    5: <h2> Toutes les locations </h2>
+    6: <div><%= link_to "Publier une nouvelle annonce", new_location_path() %> </div>
+  
+app/views/locations/index.html.erb:3
+Started GET "/locations" for 127.0.0.1 at 2022-02-03 21:53:04 +0100
+Processing by LocationsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering locations/index.html.erb within layouts/application
+  [1m[36mLocation Load (0.1ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/views/locations/index.html.erb:8
+  Rendered locations/index.html.erb within layouts/application (Duration: 15.5ms | Allocations: 2073)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 49.5ms | Allocations: 7672)
+Completed 200 OK in 54ms (Views: 52.8ms | ActiveRecord: 0.1ms | Allocations: 8931)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2022-02-03 21:53:08 +0100
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 0.5ms | Allocations: 210)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 42.5ms | Allocations: 5695)
+Completed 200 OK in 55ms (Views: 53.5ms | ActiveRecord: 0.0ms | Allocations: 6740)
+
+
+Started GET "/locations" for 127.0.0.1 at 2022-02-03 21:53:47 +0100
+Processing by LocationsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering locations/index.html.erb within layouts/application
+  [1m[36mLocation Load (0.2ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/views/locations/index.html.erb:9
+  Rendered locations/index.html.erb within layouts/application (Duration: 15.9ms | Allocations: 2110)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 64.0ms | Allocations: 7705)
+Completed 200 OK in 69ms (Views: 67.3ms | ActiveRecord: 0.2ms | Allocations: 8964)
+
+
+Started GET "/register" for 127.0.0.1 at 2022-02-03 21:53:48 +0100
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 3.7ms | Allocations: 182)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 47.1ms | Allocations: 5624)
+Completed 200 OK in 51ms (Views: 49.8ms | ActiveRecord: 0.0ms | Allocations: 6672)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2022-02-03 21:53:52 +0100
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 0.5ms | Allocations: 205)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 50.2ms | Allocations: 5685)
+Completed 200 OK in 55ms (Views: 53.1ms | ActiveRecord: 0.0ms | Allocations: 6722)
+
+
+Started GET "/register" for 127.0.0.1 at 2022-02-03 21:53:55 +0100
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 0.1ms | Allocations: 63)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 46.7ms | Allocations: 5548)
+Completed 200 OK in 48ms (Views: 47.2ms | ActiveRecord: 0.0ms | Allocations: 6062)
+
+
+Started GET "/locations" for 127.0.0.1 at 2022-02-03 21:54:41 +0100
+Processing by LocationsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering locations/index.html.erb within layouts/application
+  [1m[36mLocation Load (0.2ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/views/locations/index.html.erb:9
+  Rendered locations/index.html.erb within layouts/application (Duration: 15.4ms | Allocations: 2109)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 62.0ms | Allocations: 7704)
+Completed 200 OK in 67ms (Views: 65.4ms | ActiveRecord: 0.2ms | Allocations: 8958)
+
+

@@ -17,3 +17,17 @@
  .field_with_errors{
      color: red;
  }
+ html {
+     background-image: url("background.jpg");
+     background-position: center;
+ }
+ .annonce{
+     background-color: aliceblue;
+     height: 150px;
+     width: 300px;
+     border-radius: 10px;
+     padding: 10px;
+     margin-right: 10px;
+     margin-left: 10px;
+     float: left;
+ }

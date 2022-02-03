@@ -1,11 +1,13 @@
 <div class="logo">
 <%= image_tag "logo.png", height: 75 %>
-
+<div class="bouton_navbar"><%= link_to "S'inscrire", register_path() %> </div>
+<div class="bouton_navbar"><%= link_to "Connexion", sign_in_path() %> </div>
 </div>
 <h2> Toutes les locations </h2>
 <div><%= link_to "Publier une nouvelle annonce", new_location_path() %> </div>
-<% @location.each do |location| %>
 
+<% @location.each do |location| %>
+<div class="annonce">
     <div>Titre : <%= location.titre%> </div>
     <div>Description : <%= location.description%> </div>
     <div>Prix : <%= location.prix%>€</div>
@@ -13,5 +15,5 @@
     <div><%= link_to "Voir l'annonce", location_path(location) %> </div>
     <div><%= link_to "Modifier l'annonce", edit_location_path(location) %> </div>
     <div><%= link_to "Supprimer l'annonce", location_path(location), method: :delete %> </div>
-    <hr>
+</div>
 <% end %>
