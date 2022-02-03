@@ -8,6 +8,7 @@ class UsersController < ApplicationController
     if @user.save
       redirect_to home_path
     else
+      flash.now[:notice] = @user.errors.full_messages.to_sentence
       render :new
     end
   end
