@@ -11,6 +11,9 @@
   </head>
 
   <body>
+    <% if current_user %>
+      Bonjour <%= current_user.email %>
+    <% end %>
     <%= yield %>
   </body>
 </html>
