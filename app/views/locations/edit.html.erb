@@ -1,6 +1,7 @@
-<h2>Publier une nouvelle annonce</h2>
+<h2>Modifier l'annonce</h2>
 
 <%= form_with model: @location, local: true do |form| %>
+
     <% if @location.errors.any? %>
         <h2>Une erreur est survenue</h2>
         <ul>
@@ -59,7 +60,7 @@
     </p>
 
     <p>
-        <%= form.submit "Publier l'annonce" %>
+        <%= form.submit "Modifier l'annonce" %>
     </p>
 
 <%end%>

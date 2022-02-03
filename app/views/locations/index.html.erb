@@ -2,8 +2,12 @@
 <div><%= link_to "Publier une nouvelle annonce", new_location_path() %> </div>
 <% @location.each do |location| %>
 
-    <div>Titre :<%= location.titre%> </div>
-    <div>Description :<%= location.description%> </div>
+    <div>Titre : <%= location.titre%> </div>
+    <div>Description : <%= location.description%> </div>
+    <div>Prix : <%= location.prix%>€</div>
+    <div>Ville : <%= location.ville%></div>
     <div><%= link_to "Voir l'annonce", location_path(location) %> </div>
+    <div><%= link_to "Modifier l'annonce", edit_location_path(location) %> </div>
+    <div><%= link_to "Supprimer l'annonce", location_path(location), method: :delete %> </div>
     <hr>
 <% end %>
