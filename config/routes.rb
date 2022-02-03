@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   get 'users/new'
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 
-  root 'home#index'
+  root 'locations#index'
 
   resources :posts
 
@@ -14,7 +14,7 @@ Rails.application.routes.draw do
   get '/sign_out', to: 'sessions#destroy'
   resource :sessions, only: [:create]
   
-  get 'home', to: 'home#index'
+  get 'home', to: 'locations#index'
 
   resources :locations, only: [:show, :index, :new , :create, :edit, :update, :destroy]
 end

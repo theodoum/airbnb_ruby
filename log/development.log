@@ -28773,3 +28773,196 @@ Processing by SessionsController#new as HTML
 Completed 200 OK in 145ms (Views: 131.8ms | ActiveRecord: 0.6ms | Allocations: 29974)
 
 
+Started GET "/sessions" for 127.0.0.1 at 2022-02-03 21:06:31 +0100
+Started GET "/sessions" for 127.0.0.1 at 2022-02-03 21:06:31 +0100
+  [1m[35m (9.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (No route matches [GET] "/sessions"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/sessions"):
+  
+Started GET "/" for 127.0.0.1 at 2022-02-03 21:06:43 +0100
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 3.4ms | Allocations: 115)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 149.0ms | Allocations: 7676)
+Completed 200 OK in 185ms (Views: 153.0ms | ActiveRecord: 0.0ms | Allocations: 10507)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2022-02-03 21:06:48 +0100
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 4.0ms | Allocations: 220)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 40.7ms | Allocations: 4627)
+Completed 200 OK in 68ms (Views: 44.0ms | ActiveRecord: 0.6ms | Allocations: 9559)
+
+
+Started GET "/sessions" for 127.0.0.1 at 2022-02-03 21:06:55 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/sessions"):
+  
+Started GET "/sign_in" for 127.0.0.1 at 2022-02-03 21:07:08 +0100
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 0.1ms | Allocations: 74)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 38.7ms | Allocations: 4482)
+Completed 200 OK in 40ms (Views: 39.7ms | ActiveRecord: 0.0ms | Allocations: 4997)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2022-02-03 21:07:12 +0100
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"test@gmail.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "test@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:7:in `create'
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 0.1ms | Allocations: 66)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 36.6ms | Allocations: 4474)
+Completed 200 OK in 54ms (Views: 37.6ms | ActiveRecord: 0.2ms | Allocations: 6598)
+
+
+Started GET "/" for 127.0.0.1 at 2022-02-03 21:14:44 +0100
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by LocationsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering locations/index.html.erb within layouts/application
+  [1m[36mLocation Load (0.2ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/views/locations/index.html.erb:3
+  Rendered locations/index.html.erb within layouts/application (Duration: 28.4ms | Allocations: 9891)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 96.9ms | Allocations: 17461)
+Completed 200 OK in 121ms (Views: 101.6ms | ActiveRecord: 0.8ms | Allocations: 21281)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2022-02-03 21:16:31 +0100
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 0.8ms | Allocations: 349)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 55.2ms | Allocations: 7944)
+Completed 200 OK in 73ms (Views: 60.2ms | ActiveRecord: 0.6ms | Allocations: 14596)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2022-02-03 21:16:31 +0100
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 0.3ms | Allocations: 75)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 35.6ms | Allocations: 4483)
+Completed 200 OK in 37ms (Views: 36.7ms | ActiveRecord: 0.0ms | Allocations: 4999)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2022-02-03 21:16:36 +0100
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"test@gmail.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "test@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:7:in `create'
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.2ms | Allocations: 3702)
+
+
+  
+NameError (undefined local variable or method `index' for #<SessionsController:0x000189d4fab748>):
+  
+app/controllers/sessions_controller.rb:10:in `create'
+Started GET "/sign_in" for 127.0.0.1 at 2022-02-03 21:17:33 +0100
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 0.7ms | Allocations: 349)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 65.8ms | Allocations: 7945)
+Completed 200 OK in 84ms (Views: 70.9ms | ActiveRecord: 0.6ms | Allocations: 14596)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2022-02-03 21:17:38 +0100
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"test@gmail.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "test@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:7:in `create'
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.2ms | Allocations: 1908)
+
+
+  
+ActionController::UrlGenerationError (No route matches {:action=>"show", :controller=>"locations"}, missing required keys: [:id]):
+  
+app/controllers/sessions_controller.rb:11:in `create'
+Started GET "/sign_in" for 127.0.0.1 at 2022-02-03 21:18:51 +0100
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 0.7ms | Allocations: 349)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 68.5ms | Allocations: 7945)
+Completed 200 OK in 87ms (Views: 73.5ms | ActiveRecord: 0.6ms | Allocations: 14596)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2022-02-03 21:18:55 +0100
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"test@gmail.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "test@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:7:in `create'
+Redirected to http://127.0.0.1:3000/home
+Completed 302 Found in 4ms (ActiveRecord: 0.2ms | Allocations: 1524)
+
+
+Started GET "/home" for 127.0.0.1 at 2022-02-03 21:18:55 +0100
+Processing by LocationsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering locations/index.html.erb within layouts/application
+  [1m[36mLocation Load (0.2ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/views/locations/index.html.erb:3
+  Rendered locations/index.html.erb within layouts/application (Duration: 9.3ms | Allocations: 9077)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 52.8ms | Allocations: 13448)
+Completed 200 OK in 59ms (Views: 55.8ms | ActiveRecord: 0.9ms | Allocations: 15204)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2022-02-03 21:21:08 +0100
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 0.1ms | Allocations: 76)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 51.3ms | Allocations: 4484)
+Completed 200 OK in 53ms (Views: 52.4ms | ActiveRecord: 0.0ms | Allocations: 4992)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2022-02-03 21:21:13 +0100
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"test2@gmail.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "test2@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:7:in `create'
+Redirected to http://127.0.0.1:3000/home
+Completed 302 Found in 3ms (ActiveRecord: 0.2ms | Allocations: 995)
+
+
+Started GET "/home" for 127.0.0.1 at 2022-02-03 21:21:13 +0100
+Processing by LocationsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering locations/index.html.erb within layouts/application
+  [1m[36mLocation Load (0.2ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/views/locations/index.html.erb:3
+  Rendered locations/index.html.erb within layouts/application (Duration: 8.6ms | Allocations: 925)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 55.0ms | Allocations: 5333)
+Completed 200 OK in 56ms (Views: 55.9ms | ActiveRecord: 0.2ms | Allocations: 5839)
+
+
