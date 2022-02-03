@@ -4,7 +4,9 @@
 <div class="bouton_navbar"><%= link_to "Connexion", sign_in_path() %> </div>
 </div>
 <h2> Toutes les locations </h2>
+<% if current_user %>
 <div><%= link_to "Publier une nouvelle annonce", new_location_path() %> </div>
+<% end %>
 
 <% @location.each do |location| %>
 <div class="annonce">
