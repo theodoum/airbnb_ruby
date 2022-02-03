@@ -36011,3 +36011,693 @@ Processing by LocationsController#new as HTML
 Completed 200 OK in 98ms (Views: 97.6ms | ActiveRecord: 0.2ms | Allocations: 21036)
 
 
+Started GET "/locations/11/edit" for 127.0.0.1 at 2022-02-04 00:07:35 +0100
+  [1m[35m (2.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by LocationsController#edit as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mLocation Load (0.2ms)[0m  [1m[34mSELECT "locations".* FROM "locations" WHERE "locations"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/locations_controller.rb:14:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering locations/edit.html.erb within layouts/application
+  Rendered locations/edit.html.erb within layouts/application (Duration: 56.1ms | Allocations: 8434)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 391.7ms | Allocations: 48780)
+Completed 200 OK in 459ms (Views: 409.5ms | ActiveRecord: 0.9ms | Allocations: 63999)
+
+
+Started GET "/locations/11/edit" for 127.0.0.1 at 2022-02-04 00:07:40 +0100
+Processing by LocationsController#edit as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mLocation Load (0.2ms)[0m  [1m[34mSELECT "locations".* FROM "locations" WHERE "locations"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/locations_controller.rb:14:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering locations/edit.html.erb within layouts/application
+  Rendered locations/edit.html.erb within layouts/application (Duration: 1.9ms | Allocations: 2371)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 37.3ms | Allocations: 7856)
+Completed 200 OK in 39ms (Views: 37.7ms | ActiveRecord: 0.2ms | Allocations: 8977)
+
+
+Started GET "/locations" for 127.0.0.1 at 2022-02-04 00:07:41 +0100
+Processing by LocationsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering locations/index.html.erb within layouts/application
+  [1m[36mLocation Load (0.2ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/views/locations/index.html.erb:12
+  Rendered locations/index.html.erb within layouts/application (Duration: 3.4ms | Allocations: 2139)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 36.7ms | Allocations: 7541)
+Completed 200 OK in 38ms (Views: 36.8ms | ActiveRecord: 0.2ms | Allocations: 8193)
+
+
+Started GET "/locations/11/edit" for 127.0.0.1 at 2022-02-04 00:07:43 +0100
+Processing by LocationsController#edit as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mLocation Load (0.1ms)[0m  [1m[34mSELECT "locations".* FROM "locations" WHERE "locations"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/locations_controller.rb:14:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering locations/edit.html.erb within layouts/application
+  Rendered locations/edit.html.erb within layouts/application (Duration: 1.9ms | Allocations: 2367)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 37.0ms | Allocations: 7849)
+Completed 200 OK in 39ms (Views: 37.4ms | ActiveRecord: 0.1ms | Allocations: 8958)
+
+
+Started GET "/locations/11/edit" for 127.0.0.1 at 2022-02-04 00:09:27 +0100
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by LocationsController#edit as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mLocation Load (0.1ms)[0m  [1m[34mSELECT "locations".* FROM "locations" WHERE "locations"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/locations_controller.rb:14:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering locations/edit.html.erb within layouts/application
+  Rendered locations/edit.html.erb within layouts/application (Duration: 21.5ms | Allocations: 5464)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 69.0ms | Allocations: 17297)
+Completed 200 OK in 90ms (Views: 73.3ms | ActiveRecord: 0.8ms | Allocations: 30607)
+
+
+Started GET "/locations" for 127.0.0.1 at 2022-02-04 00:09:32 +0100
+Processing by LocationsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering locations/index.html.erb within layouts/application
+  [1m[36mLocation Load (0.2ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/views/locations/index.html.erb:12
+  Rendered locations/index.html.erb within layouts/application (Duration: 3.8ms | Allocations: 2149)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 61.4ms | Allocations: 7555)
+Completed 200 OK in 63ms (Views: 61.6ms | ActiveRecord: 0.2ms | Allocations: 8208)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2022-02-04 00:09:37 +0100
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 0.4ms | Allocations: 219)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 43.6ms | Allocations: 5708)
+Completed 200 OK in 53ms (Views: 46.1ms | ActiveRecord: 0.6ms | Allocations: 9999)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2022-02-04 00:10:45 +0100
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 4.5ms | Allocations: 209)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 49.8ms | Allocations: 5941)
+Completed 200 OK in 55ms (Views: 53.6ms | ActiveRecord: 0.0ms | Allocations: 7199)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2022-02-04 00:11:18 +0100
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 3.3ms | Allocations: 209)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 49.4ms | Allocations: 5940)
+Completed 200 OK in 54ms (Views: 52.9ms | ActiveRecord: 0.0ms | Allocations: 7197)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2022-02-04 00:11:37 +0100
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 3.5ms | Allocations: 209)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 51.6ms | Allocations: 5942)
+Completed 200 OK in 56ms (Views: 55.0ms | ActiveRecord: 0.0ms | Allocations: 7208)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2022-02-04 00:11:37 +0100
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 0.1ms | Allocations: 75)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 40.1ms | Allocations: 5562)
+Completed 200 OK in 41ms (Views: 40.5ms | ActiveRecord: 0.0ms | Allocations: 6070)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2022-02-04 00:11:53 +0100
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 0.1ms | Allocations: 74)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 323.1ms | Allocations: 25890)
+Completed 200 OK in 324ms (Views: 323.4ms | ActiveRecord: 0.0ms | Allocations: 26404)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2022-02-04 00:13:25 +0100
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 0.5ms | Allocations: 213)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 49.0ms | Allocations: 5940)
+Completed 200 OK in 54ms (Views: 52.6ms | ActiveRecord: 0.0ms | Allocations: 7202)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2022-02-04 00:13:49 +0100
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"ntmruby@tamere.fr", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "ntmruby@tamere.fr"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:7:in `create'
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 30.8ms | Allocations: 4674)
+  Rendered layout layouts/application.html.erb (Duration: 31.0ms | Allocations: 4761)
+Completed 500 Internal Server Error in 33ms (ActiveRecord: 0.2ms | Allocations: 6060)
+
+
+  
+ActionView::Template::Error (undefined method `email' for nil:NilClass):
+     8: 
+     9:     <label for="email">Email : </label>
+    10: 
+    11:     <input type="email" id="email" name="user[email]" value="<%= @user.email %>">
+    12: </div>
+    13: <div class="input-form">
+    14:     <label for="password">Mot de passe : </label>
+  
+app/views/sessions/new.html.erb:11
+app/controllers/sessions_controller.rb:14:in `create'
+Started GET "/sign_in" for 127.0.0.1 at 2022-02-04 00:13:54 +0100
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 0.1ms | Allocations: 74)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 37.3ms | Allocations: 5583)
+Completed 200 OK in 38ms (Views: 37.7ms | ActiveRecord: 0.0ms | Allocations: 6112)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2022-02-04 00:13:56 +0100
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 0.1ms | Allocations: 74)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 38.8ms | Allocations: 5557)
+Completed 200 OK in 40ms (Views: 39.2ms | ActiveRecord: 0.0ms | Allocations: 6064)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2022-02-04 00:13:58 +0100
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"ntmruby@tamere.fr", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "ntmruby@tamere.fr"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:7:in `create'
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 0.6ms | Allocations: 1380)
+  Rendered layout layouts/application.html.erb (Duration: 0.7ms | Allocations: 1467)
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.1ms | Allocations: 2609)
+
+
+  
+ActionView::Template::Error (undefined method `email' for nil:NilClass):
+     8: 
+     9:     <label for="email">Email : </label>
+    10: 
+    11:     <input type="email" id="email" name="user[email]" value="<%= @user.email %>">
+    12: </div>
+    13: <div class="input-form">
+    14:     <label for="password">Mot de passe : </label>
+  
+app/views/sessions/new.html.erb:11
+app/controllers/sessions_controller.rb:14:in `create'
+Started POST "/sessions" for 127.0.0.1 at 2022-02-04 00:14:00 +0100
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"ntmruby@tamere.fr", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "ntmruby@tamere.fr"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:7:in `create'
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 0.6ms | Allocations: 1377)
+  Rendered layout layouts/application.html.erb (Duration: 0.7ms | Allocations: 1464)
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.1ms | Allocations: 2588)
+
+
+  
+ActionView::Template::Error (undefined method `email' for nil:NilClass):
+     8: 
+     9:     <label for="email">Email : </label>
+    10: 
+    11:     <input type="email" id="email" name="user[email]" value="<%= @user.email %>">
+    12: </div>
+    13: <div class="input-form">
+    14:     <label for="password">Mot de passe : </label>
+  
+app/views/sessions/new.html.erb:11
+app/controllers/sessions_controller.rb:14:in `create'
+Started POST "/sessions" for 127.0.0.1 at 2022-02-04 00:14:04 +0100
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"ntmruby@tamere.fr", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "ntmruby@tamere.fr"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:7:in `create'
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 0.6ms | Allocations: 1379)
+  Rendered layout layouts/application.html.erb (Duration: 0.7ms | Allocations: 1467)
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.2ms | Allocations: 2607)
+
+
+  
+ActionView::Template::Error (undefined method `email' for nil:NilClass):
+     8: 
+     9:     <label for="email">Email : </label>
+    10: 
+    11:     <input type="email" id="email" name="user[email]" value="<%= @user.email %>">
+    12: </div>
+    13: <div class="input-form">
+    14:     <label for="password">Mot de passe : </label>
+  
+app/views/sessions/new.html.erb:11
+app/controllers/sessions_controller.rb:14:in `create'
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started POST "/sessions" for 127.0.0.1 at 2022-02-04 00:14:45 +0100
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"ntmruby@tamere.fr", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "ntmruby@tamere.fr"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:7:in `create'
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 1.8ms | Allocations: 1954)
+  Rendered layout layouts/application.html.erb (Duration: 2.0ms | Allocations: 2044)
+Completed 500 Internal Server Error in 18ms (ActiveRecord: 0.5ms | Allocations: 7082)
+
+
+  
+ActionView::Template::Error (undefined method `email' for nil:NilClass):
+     8: 
+     9:     <label for="email">Email : </label>
+    10: 
+    11:     <input type="email" id="email" name="user[email]" value="<%= @user.email %>">
+    12: </div>
+    13: <div class="input-form">
+    14:     <label for="password">Mot de passe : </label>
+  
+app/views/sessions/new.html.erb:11
+app/controllers/sessions_controller.rb:14:in `create'
+Started GET "/" for 127.0.0.1 at 2022-02-04 00:15:24 +0100
+Processing by LocationsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering locations/index.html.erb within layouts/application
+  [1m[36mLocation Load (0.3ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/views/locations/index.html.erb:12
+  Rendered locations/index.html.erb within layouts/application (Duration: 272.7ms | Allocations: 32941)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 341.4ms | Allocations: 38750)
+Completed 200 OK in 347ms (Views: 344.3ms | ActiveRecord: 0.8ms | Allocations: 40812)
+
+
+Started GET "/" for 127.0.0.1 at 2022-02-04 00:15:24 +0100
+Processing by LocationsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering locations/index.html.erb within layouts/application
+  [1m[36mLocation Load (0.1ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/views/locations/index.html.erb:12
+  Rendered locations/index.html.erb within layouts/application (Duration: 2.7ms | Allocations: 1727)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 38.9ms | Allocations: 7130)
+Completed 200 OK in 40ms (Views: 39.1ms | ActiveRecord: 0.1ms | Allocations: 7635)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2022-02-04 00:15:28 +0100
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 0.4ms | Allocations: 214)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 45.9ms | Allocations: 5705)
+Completed 200 OK in 53ms (Views: 48.7ms | ActiveRecord: 0.3ms | Allocations: 9165)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2022-02-04 00:15:29 +0100
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"ntmruby@tamere.fr", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "ntmruby@tamere.fr"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:7:in `create'
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 0.6ms | Allocations: 1380)
+  Rendered layout layouts/application.html.erb (Duration: 0.7ms | Allocations: 1467)
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.1ms | Allocations: 2601)
+
+
+  
+ActionView::Template::Error (undefined method `email' for nil:NilClass):
+     6:     <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+     7: 
+     8:     <label for="email">Email : </label>
+     9:     <input type="email" id="email" name="user[email]" value="<%= @user.email %>">
+    10: 
+    11:     <label for="password">Mot de passe : </label>
+    12:     <input type="password" id="password" name="user[password]">
+  
+app/views/sessions/new.html.erb:9
+app/controllers/sessions_controller.rb:14:in `create'
+Started GET "/sign_in" for 127.0.0.1 at 2022-02-04 00:15:33 +0100
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 0.1ms | Allocations: 74)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 40.5ms | Allocations: 5564)
+Completed 200 OK in 41ms (Views: 40.8ms | ActiveRecord: 0.0ms | Allocations: 6079)
+
+
+Started GET "/" for 127.0.0.1 at 2022-02-04 00:15:40 +0100
+Processing by LocationsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering locations/index.html.erb within layouts/application
+  [1m[36mLocation Load (0.1ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/views/locations/index.html.erb:12
+  Rendered locations/index.html.erb within layouts/application (Duration: 2.9ms | Allocations: 1729)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 36.5ms | Allocations: 7135)
+Completed 200 OK in 37ms (Views: 36.7ms | ActiveRecord: 0.1ms | Allocations: 7647)
+
+
+Started GET "/register" for 127.0.0.1 at 2022-02-04 00:15:44 +0100
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 0.4ms | Allocations: 209)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 48.4ms | Allocations: 5699)
+Completed 200 OK in 52ms (Views: 51.0ms | ActiveRecord: 0.0ms | Allocations: 6750)
+
+
+Started POST "/users" for 127.0.0.1 at 2022-02-04 00:15:46 +0100
+Processing by UsersController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"ntmruby@tamere.fr", "password"=>"[FILTERED]"}}
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:8:in `create'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "ntmruby@tamere.fr"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:8:in `create'
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["email", "ntmruby@tamere.fr"], ["password_digest", "$2a$12$Pp.hYndD2cN4sjvqzTIVA.pii76KyGguJfJh50bPvw73z/2wwAPUO"], ["created_at", "2022-02-03 23:15:46.493043"], ["updated_at", "2022-02-03 23:15:46.493043"]]
+  ↳ app/controllers/users_controller.rb:8:in `create'
+  [1m[36mTRANSACTION (5.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:8:in `create'
+Redirected to http://127.0.0.1:3000/home
+Completed 302 Found in 164ms (ActiveRecord: 6.6ms | Allocations: 3862)
+
+
+Started GET "/home" for 127.0.0.1 at 2022-02-04 00:15:46 +0100
+Processing by LocationsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering locations/index.html.erb within layouts/application
+  [1m[36mLocation Load (0.1ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/views/locations/index.html.erb:12
+  Rendered locations/index.html.erb within layouts/application (Duration: 2.8ms | Allocations: 1728)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 38.3ms | Allocations: 7134)
+Completed 200 OK in 39ms (Views: 38.5ms | ActiveRecord: 0.1ms | Allocations: 7639)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2022-02-04 00:15:48 +0100
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 0.1ms | Allocations: 76)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 40.0ms | Allocations: 5567)
+Completed 200 OK in 41ms (Views: 40.4ms | ActiveRecord: 0.0ms | Allocations: 6081)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2022-02-04 00:15:49 +0100
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"ntmruby@tamere.fr", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "ntmruby@tamere.fr"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:7:in `create'
+Redirected to http://127.0.0.1:3000/home
+Completed 302 Found in 154ms (ActiveRecord: 0.1ms | Allocations: 1011)
+
+
+Started GET "/home" for 127.0.0.1 at 2022-02-04 00:15:49 +0100
+Processing by LocationsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering locations/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
+  [1m[36mLocation Load (0.1ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/views/locations/index.html.erb:12
+  Rendered locations/index.html.erb within layouts/application (Duration: 3.9ms | Allocations: 2547)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
+  Rendered layout layouts/application.html.erb (Duration: 42.0ms | Allocations: 9186)
+Completed 200 OK in 43ms (Views: 42.0ms | ActiveRecord: 0.3ms | Allocations: 9692)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2022-02-04 00:15:57 +0100
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 0.1ms | Allocations: 74)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
+  Rendered layout layouts/application.html.erb (Duration: 39.5ms | Allocations: 6856)
+Completed 200 OK in 40ms (Views: 39.7ms | ActiveRecord: 0.1ms | Allocations: 7370)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2022-02-04 00:16:45 +0100
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 0.1ms | Allocations: 74)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
+  Rendered layout layouts/application.html.erb (Duration: 67.0ms | Allocations: 18397)
+Completed 200 OK in 68ms (Views: 67.1ms | ActiveRecord: 0.1ms | Allocations: 18905)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2022-02-04 00:17:05 +0100
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 0.1ms | Allocations: 74)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
+  Rendered layout layouts/application.html.erb (Duration: 71.8ms | Allocations: 18686)
+Completed 200 OK in 73ms (Views: 72.0ms | ActiveRecord: 0.2ms | Allocations: 19194)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2022-02-04 00:17:16 +0100
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 0.1ms | Allocations: 74)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
+  Rendered layout layouts/application.html.erb (Duration: 73.5ms | Allocations: 18670)
+Completed 200 OK in 74ms (Views: 73.7ms | ActiveRecord: 0.2ms | Allocations: 19178)
+
+
+Started GET "/home" for 127.0.0.1 at 2022-02-04 00:17:22 +0100
+Processing by LocationsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering locations/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
+  [1m[36mLocation Load (0.1ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/views/locations/index.html.erb:12
+  Rendered locations/index.html.erb within layouts/application (Duration: 3.7ms | Allocations: 2419)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
+  Rendered layout layouts/application.html.erb (Duration: 39.5ms | Allocations: 9054)
+Completed 200 OK in 40ms (Views: 39.5ms | ActiveRecord: 0.3ms | Allocations: 9565)
+
+
+Started GET "/register" for 127.0.0.1 at 2022-02-04 00:17:24 +0100
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 0.1ms | Allocations: 74)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
+  Rendered layout layouts/application.html.erb (Duration: 40.9ms | Allocations: 6858)
+Completed 200 OK in 42ms (Views: 41.1ms | ActiveRecord: 0.2ms | Allocations: 7373)
+
+
+Started GET "/register" for 127.0.0.1 at 2022-02-04 00:18:23 +0100
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 0.1ms | Allocations: 74)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
+  Rendered layout layouts/application.html.erb (Duration: 72.1ms | Allocations: 18721)
+Completed 200 OK in 73ms (Views: 72.2ms | ActiveRecord: 0.2ms | Allocations: 19229)
+
+
+Started GET "/register" for 127.0.0.1 at 2022-02-04 00:18:24 +0100
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 0.1ms | Allocations: 74)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
+  Rendered layout layouts/application.html.erb (Duration: 40.8ms | Allocations: 6851)
+Completed 200 OK in 41ms (Views: 40.9ms | ActiveRecord: 0.2ms | Allocations: 7359)
+
+
+Started GET "/home" for 127.0.0.1 at 2022-02-04 00:18:42 +0100
+Processing by LocationsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering locations/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
+  [1m[36mLocation Load (0.1ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/views/locations/index.html.erb:12
+  Rendered locations/index.html.erb within layouts/application (Duration: 3.7ms | Allocations: 2419)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
+  Rendered layout layouts/application.html.erb (Duration: 53.1ms | Allocations: 9053)
+Completed 200 OK in 54ms (Views: 53.2ms | ActiveRecord: 0.3ms | Allocations: 9564)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2022-02-04 00:18:44 +0100
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 0.1ms | Allocations: 74)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
+  Rendered layout layouts/application.html.erb (Duration: 39.3ms | Allocations: 6851)
+Completed 200 OK in 40ms (Views: 39.5ms | ActiveRecord: 0.1ms | Allocations: 7365)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2022-02-04 00:19:20 +0100
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 0.1ms | Allocations: 74)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
+  Rendered layout layouts/application.html.erb (Duration: 68.1ms | Allocations: 19083)
+Completed 200 OK in 73ms (Views: 68.3ms | ActiveRecord: 0.1ms | Allocations: 19591)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2022-02-04 00:19:34 +0100
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 0.1ms | Allocations: 74)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
+  Rendered layout layouts/application.html.erb (Duration: 71.7ms | Allocations: 18271)
+Completed 200 OK in 72ms (Views: 71.8ms | ActiveRecord: 0.1ms | Allocations: 18779)
+
+
+Started GET "/home" for 127.0.0.1 at 2022-02-04 00:19:42 +0100
+Processing by LocationsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering locations/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
+  [1m[36mLocation Load (0.1ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/views/locations/index.html.erb:12
+  Rendered locations/index.html.erb within layouts/application (Duration: 3.7ms | Allocations: 2419)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
+  Rendered layout layouts/application.html.erb (Duration: 51.6ms | Allocations: 9053)
+Completed 200 OK in 52ms (Views: 51.7ms | ActiveRecord: 0.3ms | Allocations: 9564)
+
+
+Started GET "/register" for 127.0.0.1 at 2022-02-04 00:19:43 +0100
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 0.1ms | Allocations: 74)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
+  Rendered layout layouts/application.html.erb (Duration: 53.8ms | Allocations: 6852)
+Completed 200 OK in 55ms (Views: 53.8ms | ActiveRecord: 0.4ms | Allocations: 7366)
+
+
+Started GET "/locations/new" for 127.0.0.1 at 2022-02-04 00:19:46 +0100
+Processing by LocationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering locations/new.html.erb within layouts/application
+  Rendered locations/new.html.erb within layouts/application (Duration: 36.1ms | Allocations: 8024)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
+  Rendered layout layouts/application.html.erb (Duration: 85.3ms | Allocations: 14703)
+Completed 200 OK in 87ms (Views: 85.5ms | ActiveRecord: 0.2ms | Allocations: 15359)
+
+
+Started GET "/locations/11/edit" for 127.0.0.1 at 2022-02-04 00:19:48 +0100
+Processing by LocationsController#edit as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mLocation Load (0.2ms)[0m  [1m[34mSELECT "locations".* FROM "locations" WHERE "locations"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/locations_controller.rb:14:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering locations/edit.html.erb within layouts/application
+  Rendered locations/edit.html.erb within layouts/application (Duration: 12.5ms | Allocations: 3082)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
+  Rendered layout layouts/application.html.erb (Duration: 52.8ms | Allocations: 9851)
+Completed 200 OK in 56ms (Views: 53.0ms | ActiveRecord: 0.4ms | Allocations: 11238)
+
+
