@@ -1,4 +1,4 @@
-<h2>Modifier l'annonce</h2>
+<h3>Modifier l'annonce</h3>
 
 <%= form_with model: @location, local: true do |form| %>
 
@@ -11,7 +11,7 @@
         
         </ul>
     <%end%>
-
+<div>
     <p>
         <%= form.label :titre %>
         <%= form.text_field :titre%>
@@ -39,7 +39,7 @@
         <%= form.text_field :rue %>
     </p>
     <p>
-        <%= form.label "Numéro de la rue" %>
+        <%=  form.label "Numéro de la rue" %>
         <%= form.text_field :numRue %>
     </p>
     <p>
@@ -62,5 +62,5 @@
     <p>
         <%= form.submit "Modifier l'annonce" %>
     </p>
-
+</div>
 <%end%>
