@@ -30259,7 +30259,42 @@ Completed 200 OK in 83ms (Views: 71.9ms | ActiveRecord: 0.8ms | Allocations: 212
 >>>>>>> 18c436b7ba94f62919769d74ff0a47fefc133b2a
 
 
+<<<<<<< HEAD
 Started GET "/locations" for 127.0.0.1 at 2022-02-03 22:16:57 +0100
+=======
+  [1m[35m (5.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for 127.0.0.1 at 2022-02-03 22:20:29 +0100
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by LocationsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering locations/index.html.erb within layouts/application
+  [1m[36mLocation Load (0.3ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/views/locations/index.html.erb:9
+  Rendered locations/index.html.erb within layouts/application (Duration: 198.9ms | Allocations: 29237)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 291.7ms | Allocations: 40436)
+Completed 200 OK in 360ms (Views: 310.5ms | ActiveRecord: 0.9ms | Allocations: 48381)
+
+
+Started GET "/register" for 127.0.0.1 at 2022-02-03 22:20:35 +0100
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 3.7ms | Allocations: 189)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 44.4ms | Allocations: 5211)
+Completed 200 OK in 66ms (Views: 47.7ms | ActiveRecord: 0.6ms | Allocations: 9248)
+
+
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" /* loading for inspect */ LIMIT ?[0m  [["LIMIT", 11]]
+Started GET "/" for 127.0.0.1 at 2022-02-03 22:21:32 +0100
+>>>>>>> f8581ef723967ce1dfb0ed54f1a346dc0041bfe4
   [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
   [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
 Processing by LocationsController#index as HTML
@@ -30267,6 +30302,7 @@ Processing by LocationsController#index as HTML
   Rendering locations/index.html.erb within layouts/application
   [1m[36mLocation Load (0.2ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
   ↳ app/views/locations/index.html.erb:9
+<<<<<<< HEAD
   Rendered locations/index.html.erb within layouts/application (Duration: 109.3ms | Allocations: 25078)
 [Webpacker] Everything's up-to-date. Nothing to do
   Rendered layout layouts/application.html.erb (Duration: 159.0ms | Allocations: 30904)
@@ -30318,11 +30354,31 @@ ActionView::Template::Error (undefined method `email' for nil:NilClass):
 app/views/sessions/new.html.erb:9
 app/controllers/sessions_controller.rb:14:in `create'
 Started GET "/sign_in" for 127.0.0.1 at 2022-02-03 22:17:28 +0100
+=======
+  Rendered locations/index.html.erb within layouts/application (Duration: 22.5ms | Allocations: 15001)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 68.9ms | Allocations: 19924)
+Completed 200 OK in 84ms (Views: 73.2ms | ActiveRecord: 0.8ms | Allocations: 23690)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2022-02-03 22:21:41 +0100
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 3.8ms | Allocations: 214)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 55.2ms | Allocations: 5228)
+Completed 200 OK in 64ms (Views: 58.6ms | ActiveRecord: 0.6ms | Allocations: 9214)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2022-02-03 22:21:42 +0100
+>>>>>>> f8581ef723967ce1dfb0ed54f1a346dc0041bfe4
 Processing by SessionsController#new as HTML
   Rendering layout layouts/application.html.erb
   Rendering sessions/new.html.erb within layouts/application
   Rendered sessions/new.html.erb within layouts/application (Duration: 0.1ms | Allocations: 74)
 [Webpacker] Everything's up-to-date. Nothing to do
+<<<<<<< HEAD
   Rendered layout layouts/application.html.erb (Duration: 34.7ms | Allocations: 5587)
 Completed 200 OK in 35ms (Views: 35.0ms | ActiveRecord: 0.0ms | Allocations: 6116)
 
@@ -30428,11 +30484,28 @@ Completed 302 Found in 1ms (ActiveRecord: 0.1ms | Allocations: 990)
 
 
 Started GET "/home" for 127.0.0.1 at 2022-02-03 22:18:05 +0100
+=======
+  Rendered layout layouts/application.html.erb (Duration: 44.2ms | Allocations: 5088)
+Completed 200 OK in 46ms (Views: 45.3ms | ActiveRecord: 0.0ms | Allocations: 5605)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2022-02-03 22:21:47 +0100
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"test@gmail.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "test@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:7:in `create'
+Redirected to http://127.0.0.1:3000/home
+Completed 302 Found in 4ms (ActiveRecord: 0.2ms | Allocations: 1484)
+
+
+Started GET "/home" for 127.0.0.1 at 2022-02-03 22:21:47 +0100
+>>>>>>> f8581ef723967ce1dfb0ed54f1a346dc0041bfe4
 Processing by LocationsController#index as HTML
   Rendering layout layouts/application.html.erb
   Rendering locations/index.html.erb within layouts/application
   [1m[36mLocation Load (0.1ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
   ↳ app/views/locations/index.html.erb:9
+<<<<<<< HEAD
   Rendered locations/index.html.erb within layouts/application (Duration: 2.8ms | Allocations: 1817)
 [Webpacker] Everything's up-to-date. Nothing to do
   [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
@@ -30462,10 +30535,44 @@ Completed 200 OK in 98ms (Views: 86.9ms | ActiveRecord: 1.6ms | Allocations: 310
 
 
 Started GET "/home" for 127.0.0.1 at 2022-02-03 22:25:19 +0100
+=======
+  Rendered locations/index.html.erb within layouts/application (Duration: 4.1ms | Allocations: 1729)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
+  Rendered layout layouts/application.html.erb (Duration: 57.8ms | Allocations: 8078)
+Completed 200 OK in 59ms (Views: 58.4ms | ActiveRecord: 0.4ms | Allocations: 8583)
+
+
+Started GET "/home" for 127.0.0.1 at 2022-02-03 22:23:33 +0100
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by LocationsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering locations/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
+  [1m[36mLocation Load (0.2ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/views/locations/index.html.erb:11
+  Rendered locations/index.html.erb within layouts/application (Duration: 42.0ms | Allocations: 19100)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6:in `current_user'
+  Rendered layout layouts/application.html.erb (Duration: 88.2ms | Allocations: 25262)
+Completed 200 OK in 104ms (Views: 92.3ms | ActiveRecord: 1.6ms | Allocations: 29028)
+
+
+Started GET "/home" for 127.0.0.1 at 2022-02-03 22:23:41 +0100
+>>>>>>> f8581ef723967ce1dfb0ed54f1a346dc0041bfe4
 Processing by LocationsController#index as HTML
   Rendering layout layouts/application.html.erb
   Rendering locations/index.html.erb within layouts/application
   [1m[36mLocation Load (0.1ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+<<<<<<< HEAD
   ↳ app/views/locations/index.html.erb:9
   Rendered locations/index.html.erb within layouts/application (Duration: 3.0ms | Allocations: 1826)
 [Webpacker] Everything's up-to-date. Nothing to do
@@ -30517,5 +30624,12 @@ Processing by LocationsController#index as HTML
 [Webpacker] Everything's up-to-date. Nothing to do
   Rendered layout layouts/application.html.erb (Duration: 39.6ms | Allocations: 7219)
 Completed 200 OK in 41ms (Views: 39.9ms | ActiveRecord: 0.1ms | Allocations: 7725)
+=======
+  ↳ app/views/locations/index.html.erb:11
+  Rendered locations/index.html.erb within layouts/application (Duration: 4.3ms | Allocations: 1720)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 63.4ms | Allocations: 6650)
+Completed 200 OK in 65ms (Views: 64.5ms | ActiveRecord: 0.1ms | Allocations: 7164)
+>>>>>>> f8581ef723967ce1dfb0ed54f1a346dc0041bfe4
 
 
