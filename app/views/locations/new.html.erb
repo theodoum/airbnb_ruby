@@ -1,0 +1,30 @@
+<h2>Publier une nouvelle annonce</h2>
+
+<%= form_with model: @location, local: true do |form| %>
+    <% if @location.errors.any? %>
+        <h2>Une erreur est survenue</h2>
+        <ul>
+            <% @location.errors.full_messages.each do |msg| %>
+                <li><%= msg %> </li>
+            <%end%>
+        
+        </ul>
+    <%end%>
+
+    <p>
+        <%= form.label :titre %>
+        <%= form.text_field :titre%>
+    
+    </p>
+    <p>
+        <%= form.label :description %>
+        <%= form.text_area :description%>
+    
+    </p>
+
+
+    <p>
+        <%= form.submit "Publier l'annonce" %>
+    </p>
+
+<%end%>

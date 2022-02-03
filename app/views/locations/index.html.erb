@@ -1,9 +1,9 @@
 <h2> Toutes les locations </h2>
-
+<div><%= link_to "Publier une nouvelle annonce", new_location_path() %> </div>
 <% @location.each do |location| %>
 
     <div>Titre :<%= location.titre%> </div>
     <div>Description :<%= location.description%> </div>
-    <div><%= link_to "Show", location_path(location) %> </div>
+    <div><%= link_to "Voir l'annonce", location_path(location) %> </div>
     <hr>
 <% end %>

@@ -5,5 +5,5 @@ Rails.application.routes.draw do
 
   get 'home', to: 'home#index'
 
-  resources :locations, only: [:show, :index]
+  resources :locations, only: [:show, :index, :new , :create]
 end
