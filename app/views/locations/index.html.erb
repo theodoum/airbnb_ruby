@@ -1,3 +1,7 @@
+<div class="logo">
+<%= image_tag "logo.png", height: 75 %>
+
+</div>
 <h2> Toutes les locations </h2>
 <div><%= link_to "Publier une nouvelle annonce", new_location_path() %> </div>
 <% @location.each do |location| %>

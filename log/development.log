@@ -28773,3 +28773,457 @@ Processing by SessionsController#new as HTML
 Completed 200 OK in 145ms (Views: 131.8ms | ActiveRecord: 0.6ms | Allocations: 29974)
 
 
+  [1m[35m (2.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mLocation Load (0.2ms)[0m  [1m[34mSELECT "locations".* FROM "locations" /* loading for inspect */ LIMIT ?[0m  [["LIMIT", 11]]
+Started GET "/" for 127.0.0.1 at 2022-02-03 21:11:29 +0100
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 4.6ms | Allocations: 400)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/webpacker-5.4.3/lib/webpacker/runner.rb:13:in ``': No such file or directory - yarn bin (Errno::ENOENT)
+	from C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/webpacker-5.4.3/lib/webpacker/runner.rb:13:in `initialize'
+	from C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/webpacker-5.4.3/lib/webpacker/runner.rb:6:in `new'
+	from C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/webpacker-5.4.3/lib/webpacker/runner.rb:6:in `run'
+	from ./bin/webpack:17:in `block in <main>'
+	from ./bin/webpack:16:in `chdir'
+	from ./bin/webpack:16:in `<main>'
+
+  Rendered layout layouts/application.html.erb (Duration: 1181.1ms | Allocations: 28165)
+Completed 200 OK in 1211ms (Views: 1191.8ms | ActiveRecord: 0.0ms | Allocations: 32531)
+
+
+Started GET "/Location" for 127.0.0.1 at 2022-02-03 21:11:36 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/Location"):
+  
+Started GET "/location" for 127.0.0.1 at 2022-02-03 21:11:42 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/location"):
+  
+Started GET "/locations" for 127.0.0.1 at 2022-02-03 21:11:45 +0100
+Processing by LocationsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering locations/index.html.erb within layouts/application
+  [1m[36mLocation Load (0.2ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/views/locations/index.html.erb:3
+  Rendered locations/index.html.erb within layouts/application (Duration: 16.4ms | Allocations: 9764)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 62.5ms | Allocations: 14414)
+Completed 200 OK in 68ms (Views: 64.6ms | ActiveRecord: 0.8ms | Allocations: 16357)
+
+
+Started GET "/locations/new" for 127.0.0.1 at 2022-02-03 21:12:35 +0100
+Processing by LocationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering locations/new.html.erb within layouts/application
+  Rendered locations/new.html.erb within layouts/application (Duration: 70.8ms | Allocations: 10626)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 110.9ms | Allocations: 15190)
+Completed 200 OK in 113ms (Views: 111.3ms | ActiveRecord: 0.0ms | Allocations: 15863)
+
+
+Started POST "/locations" for 127.0.0.1 at 2022-02-03 21:12:43 +0100
+Processing by LocationsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "location"=>{"titre"=>"", "description"=>"", "nbChambre"=>"", "nbCouchage"=>"", "ville"=>"", "rue"=>"", "numRue"=>"", "lat"=>"", "long"=>"", "prix"=>"", "photos"=>""}, "commit"=>"Publier l'annonce"}
+  Rendering layout layouts/application.html.erb
+  Rendering locations/new.html.erb within layouts/application
+  Rendered locations/new.html.erb within layouts/application (Duration: 8.1ms | Allocations: 12500)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 52.9ms | Allocations: 17080)
+Completed 200 OK in 54ms (Views: 53.3ms | ActiveRecord: 0.0ms | Allocations: 18678)
+
+
+Started GET "/locations/new" for 127.0.0.1 at 2022-02-03 21:12:49 +0100
+Processing by LocationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering locations/new.html.erb within layouts/application
+  Rendered locations/new.html.erb within layouts/application (Duration: 2.0ms | Allocations: 2303)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 36.0ms | Allocations: 6963)
+Completed 200 OK in 37ms (Views: 36.4ms | ActiveRecord: 0.0ms | Allocations: 7487)
+
+
+Started GET "/locations/register" for 127.0.0.1 at 2022-02-03 21:12:58 +0100
+Processing by LocationsController#show as HTML
+  Parameters: {"id"=>"register"}
+  [1m[36mLocation Load (0.2ms)[0m  [1m[34mSELECT "locations".* FROM "locations" WHERE "locations"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/locations_controller.rb:7:in `show'
+Completed 404 Not Found in 2ms (ActiveRecord: 0.2ms | Allocations: 1624)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Location with 'id'=register):
+  
+app/controllers/locations_controller.rb:7:in `show'
+Started GET "/locations" for 127.0.0.1 at 2022-02-03 21:13:03 +0100
+Processing by LocationsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering locations/index.html.erb within layouts/application
+  [1m[36mLocation Load (0.1ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/views/locations/index.html.erb:3
+  Rendered locations/index.html.erb within layouts/application (Duration: 1.3ms | Allocations: 935)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 38.4ms | Allocations: 5599)
+Completed 200 OK in 39ms (Views: 38.6ms | ActiveRecord: 0.1ms | Allocations: 6111)
+
+
+Started GET "/" for 127.0.0.1 at 2022-02-03 21:13:59 +0100
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 39)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 34.9ms | Allocations: 4706)
+Completed 200 OK in 36ms (Views: 35.4ms | ActiveRecord: 0.0ms | Allocations: 5199)
+
+
+Started GET "/locations" for 127.0.0.1 at 2022-02-03 21:14:09 +0100
+Processing by LocationsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering locations/index.html.erb within layouts/application
+  [1m[36mLocation Load (0.1ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/views/locations/index.html.erb:3
+  Rendered locations/index.html.erb within layouts/application (Duration: 1.3ms | Allocations: 924)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 49.6ms | Allocations: 5583)
+Completed 200 OK in 50ms (Views: 49.8ms | ActiveRecord: 0.1ms | Allocations: 6087)
+
+
+Started GET "/locations" for 127.0.0.1 at 2022-02-03 21:18:39 +0100
+Processing by LocationsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering locations/index.html.erb within layouts/application
+  [1m[36mLocation Load (0.2ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/views/locations/index.html.erb:3
+  Rendered locations/index.html.erb within layouts/application (Duration: 2.0ms | Allocations: 1170)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 46.9ms | Allocations: 6033)
+Completed 200 OK in 52ms (Views: 50.7ms | ActiveRecord: 0.2ms | Allocations: 7294)
+
+
+Started GET "/locations" for 127.0.0.1 at 2022-02-03 21:18:40 +0100
+Processing by LocationsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering locations/index.html.erb within layouts/application
+  [1m[36mLocation Load (0.1ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/views/locations/index.html.erb:3
+  Rendered locations/index.html.erb within layouts/application (Duration: 1.2ms | Allocations: 931)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 38.4ms | Allocations: 5595)
+Completed 200 OK in 39ms (Views: 38.6ms | ActiveRecord: 0.1ms | Allocations: 6100)
+
+
+Started GET "/locations" for 127.0.0.1 at 2022-02-03 21:18:41 +0100
+Processing by LocationsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering locations/index.html.erb within layouts/application
+  [1m[36mLocation Load (0.1ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/views/locations/index.html.erb:3
+  Rendered locations/index.html.erb within layouts/application (Duration: 1.3ms | Allocations: 924)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 39.6ms | Allocations: 5588)
+Completed 200 OK in 40ms (Views: 39.8ms | ActiveRecord: 0.1ms | Allocations: 6092)
+
+
+Started GET "/locations" for 127.0.0.1 at 2022-02-03 21:18:41 +0100
+Processing by LocationsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering locations/index.html.erb within layouts/application
+  [1m[36mLocation Load (0.2ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/views/locations/index.html.erb:3
+  Rendered locations/index.html.erb within layouts/application (Duration: 1.3ms | Allocations: 933)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 47.3ms | Allocations: 5603)
+Completed 200 OK in 48ms (Views: 47.5ms | ActiveRecord: 0.2ms | Allocations: 6117)
+
+
+Started GET "/locations" for 127.0.0.1 at 2022-02-03 21:19:06 +0100
+Processing by LocationsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering locations/index.html.erb within layouts/application
+  [1m[36mLocation Load (0.2ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/views/locations/index.html.erb:7
+  Rendered locations/index.html.erb within layouts/application (Duration: 10.0ms | Allocations: 1172)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 48.3ms | Allocations: 6035)
+Completed 200 OK in 53ms (Views: 51.6ms | ActiveRecord: 0.2ms | Allocations: 7294)
+
+
+Started GET "/app/assets/images/logo.png" for 127.0.0.1 at 2022-02-03 21:19:06 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/app/assets/images/logo.png"):
+  
+Started GET "/locations" for 127.0.0.1 at 2022-02-03 21:19:35 +0100
+Processing by LocationsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering locations/index.html.erb within layouts/application
+  [1m[36mLocation Load (0.2ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/views/locations/index.html.erb:7
+  Rendered locations/index.html.erb within layouts/application (Duration: 10.1ms | Allocations: 1161)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 48.6ms | Allocations: 6028)
+Completed 200 OK in 54ms (Views: 52.2ms | ActiveRecord: 0.2ms | Allocations: 7288)
+
+
+Started GET "/app/assets/images/logo.png" for 127.0.0.1 at 2022-02-03 21:19:35 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/app/assets/images/logo.png"):
+  
+Started GET "/locations" for 127.0.0.1 at 2022-02-03 21:20:08 +0100
+Processing by LocationsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering locations/index.html.erb within layouts/application
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/views/locations/index.html.erb:7
+  [1m[36mLocation Load (0.2ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/views/locations/index.html.erb:7
+  Rendered locations/index.html.erb within layouts/application (Duration: 17.8ms | Allocations: 9545)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 70.7ms | Allocations: 14374)
+Completed 200 OK in 79ms (Views: 74.8ms | ActiveRecord: 1.3ms | Allocations: 16466)
+
+
+Started GET "/app/assets/images/logo.png" for 127.0.0.1 at 2022-02-03 21:20:08 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/app/assets/images/logo.png"):
+  
+Started GET "/locations" for 127.0.0.1 at 2022-02-03 21:20:09 +0100
+Processing by LocationsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering locations/index.html.erb within layouts/application
+  [1m[36mLocation Load (0.1ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/views/locations/index.html.erb:7
+  Rendered locations/index.html.erb within layouts/application (Duration: 1.2ms | Allocations: 930)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 52.3ms | Allocations: 5599)
+Completed 200 OK in 53ms (Views: 52.5ms | ActiveRecord: 0.1ms | Allocations: 6104)
+
+
+Started GET "/app/assets/images/logo.png" for 127.0.0.1 at 2022-02-03 21:20:09 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/app/assets/images/logo.png"):
+  
+Started GET "/locations" for 127.0.0.1 at 2022-02-03 21:21:21 +0100
+Processing by LocationsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering locations/index.html.erb within layouts/application
+  [1m[36mLocation Load (0.2ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/views/locations/index.html.erb:6
+  Rendered locations/index.html.erb within layouts/application (Duration: 9.8ms | Allocations: 1165)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 49.4ms | Allocations: 6028)
+Completed 200 OK in 54ms (Views: 52.7ms | ActiveRecord: 0.2ms | Allocations: 7288)
+
+
+Started GET "/locations" for 127.0.0.1 at 2022-02-03 21:21:41 +0100
+Processing by LocationsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering locations/index.html.erb within layouts/application
+  Rendered locations/index.html.erb within layouts/application (Duration: 11.6ms | Allocations: 1798)
+  Rendered layout layouts/application.html.erb (Duration: 11.8ms | Allocations: 1883)
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 0.0ms | Allocations: 3109)
+
+
+  
+ActionView::Template::Error (The asset "app/assets/images/logo.png" is not present in the asset pipeline.
+):
+    1: <div>
+    2: <%= image_tag "app/assets/images/logo.png", height: 300 %>
+    3: </div>
+    4: <h2> Toutes les locations </h2>
+    5: <div><%= link_to "Publier une nouvelle annonce", new_location_path() %> </div>
+  
+app/views/locations/index.html.erb:2
+Started GET "/locations" for 127.0.0.1 at 2022-02-03 21:21:56 +0100
+Processing by LocationsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering locations/index.html.erb within layouts/application
+  [1m[36mLocation Load (0.2ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/views/locations/index.html.erb:6
+  Rendered locations/index.html.erb within layouts/application (Duration: 11.0ms | Allocations: 1202)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 49.9ms | Allocations: 6069)
+Completed 200 OK in 55ms (Views: 53.4ms | ActiveRecord: 0.2ms | Allocations: 7328)
+
+
+Started GET "/app/assets/images/logo.png" for 127.0.0.1 at 2022-02-03 21:21:56 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/app/assets/images/logo.png"):
+  
+Started GET "/locations" for 127.0.0.1 at 2022-02-03 21:22:20 +0100
+Processing by LocationsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering locations/index.html.erb within layouts/application
+  [1m[36mLocation Load (0.2ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/views/locations/index.html.erb:6
+  Rendered locations/index.html.erb within layouts/application (Duration: 1.3ms | Allocations: 950)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 37.4ms | Allocations: 5614)
+Completed 200 OK in 38ms (Views: 37.6ms | ActiveRecord: 0.2ms | Allocations: 6119)
+
+
+Started GET "/app/assets/images/logo.png" for 127.0.0.1 at 2022-02-03 21:22:20 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/app/assets/images/logo.png"):
+  
+Started GET "/locations" for 127.0.0.1 at 2022-02-03 21:22:44 +0100
+Processing by LocationsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering locations/index.html.erb within layouts/application
+  [1m[36mLocation Load (0.2ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/views/locations/index.html.erb:6
+  Rendered locations/index.html.erb within layouts/application (Duration: 33.1ms | Allocations: 10675)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 80.8ms | Allocations: 15456)
+Completed 200 OK in 86ms (Views: 84.2ms | ActiveRecord: 0.2ms | Allocations: 16715)
+
+
+Started GET "/locations" for 127.0.0.1 at 2022-02-03 21:22:55 +0100
+Processing by LocationsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering locations/index.html.erb within layouts/application
+  [1m[36mLocation Load (0.2ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/views/locations/index.html.erb:6
+  Rendered locations/index.html.erb within layouts/application (Duration: 13.8ms | Allocations: 2033)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 82.7ms | Allocations: 6815)
+Completed 200 OK in 88ms (Views: 86.3ms | ActiveRecord: 0.2ms | Allocations: 8069)
+
+
+Started GET "/locations" for 127.0.0.1 at 2022-02-03 21:23:04 +0100
+Processing by LocationsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering locations/index.html.erb within layouts/application
+  [1m[36mLocation Load (0.1ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/views/locations/index.html.erb:6
+  Rendered locations/index.html.erb within layouts/application (Duration: 14.1ms | Allocations: 2039)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 51.0ms | Allocations: 6820)
+Completed 200 OK in 56ms (Views: 54.4ms | ActiveRecord: 0.1ms | Allocations: 8079)
+
+
+Started GET "/signin" for 127.0.0.1 at 2022-02-03 21:25:12 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/signin"):
+  
+Started GET "/sign-in" for 127.0.0.1 at 2022-02-03 21:25:17 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/sign-in"):
+  
+Started GET "/sign_in" for 127.0.0.1 at 2022-02-03 21:25:27 +0100
+  
+SyntaxError (C:/Users/thoma/Documents/Cours/MASTER 2/airbnb_ruby/app/controllers/sessions_controller.rb:18: syntax error, unexpected end-of-input, expecting end):
+  
+app/controllers/sessions_controller.rb:18: syntax error, unexpected end-of-input, expecting end
+app/controllers/sessions_controller.rb:18: syntax error, unexpected end-of-input, expecting end
+app/controllers/sessions_controller.rb:18: syntax error, unexpected end-of-input, expecting end
+Started GET "/locations" for 127.0.0.1 at 2022-02-03 21:25:42 +0100
+Processing by LocationsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering locations/index.html.erb within layouts/application
+  Rendered locations/index.html.erb within layouts/application (Duration: 18.2ms | Allocations: 4616)
+  Rendered layout layouts/application.html.erb (Duration: 18.4ms | Allocations: 4701)
+Completed 500 Internal Server Error in 24ms (ActiveRecord: 0.0ms | Allocations: 5940)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `location' for #<ActionView::Base:0x000185e20df610>
+Did you mean?  @location):
+    1: <div class="logo">
+    2: <%= image_tag "logo.png", height: 75 %>
+    3: <div><%= link_to "S'inscrire", location_path(location) %> </div>
+    4: <div><%= link_to "Connexion", location_path(location) %> </div>
+    5: </div>
+    6: <h2> Toutes les locations </h2>
+  
+app/views/locations/index.html.erb:3
+Started GET "/locations" for 127.0.0.1 at 2022-02-03 21:26:58 +0100
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by LocationsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering locations/index.html.erb within layouts/application
+  Rendered locations/index.html.erb within layouts/application (Duration: 16.5ms | Allocations: 9569)
+  Rendered layout layouts/application.html.erb (Duration: 16.6ms | Allocations: 9659)
+Completed 500 Internal Server Error in 32ms (ActiveRecord: 0.0ms | Allocations: 13389)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `location' for #<ActionView::Base:0x00020dd5d7b600>
+Did you mean?  @location):
+    1: <div class="logo">
+    2: <%= image_tag "logo.png", height: 75 %>
+    3: <div><%= link_to "S'inscrire", location_path(location) %> </div>
+    4: <div><%= link_to "Connexion", location_path(location) %> </div>
+    5: </div>
+    6: <h2> Toutes les locations </h2>
+  
+app/views/locations/index.html.erb:3
+Started GET "/locations" for 127.0.0.1 at 2022-02-03 21:27:35 +0100
+Processing by LocationsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering locations/index.html.erb within layouts/application
+  Rendered locations/index.html.erb within layouts/application (Duration: 18.7ms | Allocations: 4627)
+  Rendered layout layouts/application.html.erb (Duration: 18.9ms | Allocations: 4714)
+Completed 500 Internal Server Error in 24ms (ActiveRecord: 0.0ms | Allocations: 5986)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `location' for #<ActionView::Base:0x00020dd4fa7380>
+Did you mean?  @location):
+    1: <div class="logo">
+    2: <%= image_tag "logo.png", height: 75 %>
+    3: <!--<div><%= link_to "S'inscrire", location_path(location) %> </div>
+    4: <div><%= link_to "Connexion", location_path(location) %> </div>-->
+    5: </div>
+    6: <h2> Toutes les locations </h2>
+  
+app/views/locations/index.html.erb:3
+Started GET "/locations" for 127.0.0.1 at 2022-02-03 21:27:52 +0100
+Processing by LocationsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering locations/index.html.erb within layouts/application
+  Rendered locations/index.html.erb within layouts/application (Duration: 17.7ms | Allocations: 4607)
+  Rendered layout layouts/application.html.erb (Duration: 17.9ms | Allocations: 4692)
+Completed 500 Internal Server Error in 23ms (ActiveRecord: 0.0ms | Allocations: 5923)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `location' for #<ActionView::Base:0x00020dd4e239f0>
+Did you mean?  @location):
+    1: <div class="logo">
+    2: <%= image_tag "logo.png", height: 75 %>
+    3: /*<%= link_to "S'inscrire", location_path(location) %> </div>
+    4: <div><%= link_to "Connexion", location_path(location) %> </div>*/
+    5: </div>
+    6: <h2> Toutes les locations </h2>
+  
+app/views/locations/index.html.erb:3
+Started GET "/locations" for 127.0.0.1 at 2022-02-03 21:29:03 +0100
+Processing by LocationsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering locations/index.html.erb within layouts/application
+  [1m[36mLocation Load (0.2ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/views/locations/index.html.erb:7
+  Rendered locations/index.html.erb within layouts/application (Duration: 20.8ms | Allocations: 10638)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 62.1ms | Allocations: 15604)
+Completed 200 OK in 67ms (Views: 64.8ms | ActiveRecord: 0.8ms | Allocations: 16882)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2022-02-03 21:29:15 +0100
+  
+SyntaxError (C:/Users/thoma/Documents/Cours/MASTER 2/airbnb_ruby/app/controllers/sessions_controller.rb:18: syntax error, unexpected end-of-input, expecting end):
+  
+app/controllers/sessions_controller.rb:18: syntax error, unexpected end-of-input, expecting end
+app/controllers/sessions_controller.rb:18: syntax error, unexpected end-of-input, expecting end
+app/controllers/sessions_controller.rb:18: syntax error, unexpected end-of-input, expecting end

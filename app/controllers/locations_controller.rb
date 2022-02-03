@@ -14,7 +14,7 @@ class LocationsController < ApplicationController
         @location = Location.find(params[:id])
     end
 
-    def create
+    def create  
         @location = Location.new(locations_params)
 
         if @location.save
