@@ -1,6 +1,6 @@
 class LocationsController < ApplicationController
     def index
-        @location = Location.all
+        @location = Location.search_by_rate(params[:search_by_rate])
     end
     
     def show
@@ -43,6 +43,6 @@ class LocationsController < ApplicationController
     private
 
     def locations_params
-        params.require(:location).permit(:titre, :description, :nbChambre, :nbCouchage, :rue, :ville, :numRue, :lat, :long, :prix, :photos)
+        params.require(:location).permit(:titre, :description, :nbChambre, :nbCouchage, :rue, :ville, :numRue, :lat, :long, :prix, :photos, :search_by_rate)
     end
 end

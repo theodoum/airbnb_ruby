@@ -8,6 +8,14 @@
 <div class="bouton_publish"><%= link_to "Publier une nouvelle annonce", new_location_path() , class: "bouton_publish"%></div> 
 <% end %></div>
 
+<h4 class="color-white">Recherche : </h4>
+<label class="color-white">Budget : </label>
+<%= form_tag(home_path, method: :get) do %>
+    <%= text_field_tag(:search_by_rate, params[:search_by_rate]) %>
+    <%= submit_tag ("Recherche") %>
+<% end %>
+    <%= button_to "Supprimer le filtre de recherche", home_path, method: :get %>
+
 
 <% @location.each do |location| %>
 <div class="annonce">
